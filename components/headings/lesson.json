@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Headings Component", "description": "Headings (<h1> to <h6>) are used to structure content and define hierarchy." },
+  "html": { "title": "HTML", "code": "<h1>Main Title</h1>" },
+  "css": { "title": "CSS", "code": "h1 { font-size: 2em; }" },
+  "js": { "title": "JavaScript", "description": "No JS required." },
+  "best-practices": { "title": "Best Practices", "points": ["Use headings in a logical, descending order.", "Do not skip heading levels."] },
+  "props": [],
+  "quiz": {
+    "title": "Headings Quiz",
+    "questions": [
+      {
+        "question": "Which heading element represents the highest level of importance?",
+        "answers": [ "<h6>", "<h3>", "<h1>", "<h2>" ],
+        "answer": "<h1>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Radio Group Component",
+    "description": "Radio buttons let users select exactly one option from a list of mutually exclusive choices."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<fieldset class=\\\"radio-group\\\">\\n  <legend>Plan</legend>\\n  <label><input type=\\\"radio\\\" name=\\\"plan\\\" value=\\\"basic\\\"> Basic</label>\\n  <label><input type=\\\"radio\\\" name=\\\"plan\\\" value=\\\"pro\\\"> Pro</label>\\n</fieldset>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript can listen for change events and update the selected value in the application state."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "All radios in a group must share the same name attribute.",
+      "Wrap related radios in a fieldset with a legend for context.",
+      "Ensure sufficient contrast for selected and focus states.",
+      "Make the entire label clickable by associating label and input.",
+      "Do not use radios when multiple selections are allowed; use checkboxes."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Radio Group Quiz",
+    "questions": [
+      {
+        "question": "What attribute must be the same across all radio buttons in the same group?",
+        "answers": [
+          "id",
+          "name",
+          "value",
+          "for"
+        ],
+        "answer": "name"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Tooltip Component", "description": "Tooltips display informative text when a user hovers over or focuses on an element." },
+  "html": { "title": "HTML", "code": "<!-- Tooltip HTML structure -->" },
+  "css": { "title": "CSS", "code": "/* Tooltip styles */" },
+  "js": { "title": "JavaScript", "description": "JS is often used to control the positioning and visibility of tooltips." },
+  "best-practices": { "title": "Best Practices", "points": ["Tooltips should contain non-essential, supplementary information."] },
+  "props": [],
+  "quiz": {
+    "title": "Tooltip Quiz",
+    "questions": [
+      {
+        "question": "Tooltips are typically triggered by which user action?",
+        "answers": [ "Clicking a button", "Scrolling the page", "Hovering the mouse over an element", "Typing in a text field" ],
+        "answer": "Hovering the mouse over an element"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+    "title": "Stat Block / KPI Display",
+    "description": "Stat blocks are used to display key metrics or Key Performance Indicators (KPIs) in a clear and prominent way.",
+    "keywords": ["stat", "kpi", "metric", "dashboard", "display"],
+    "overview": {
+        "title": "Overview of Stat Blocks",
+        "description": "Stat blocks, or KPI displays, provide a quick snapshot of important data. They typically combine a label, a large numerical value, and sometimes an icon for easy visual identification. They are commonly used in dashboards."
+    },
+    "html": {
+        "title": "HTML Structure",
+        "description": "The HTML is straightforward, usually a container `<div>` with elements for an icon, a label (title), and the primary data value. Flexbox is used for alignment."
+    },
+    "css": {
+        "title": "CSS Styling",
+        "description": "Styling focuses on making the key value stand out with a large font size and bold weight. Color and spacing are used to create a clear visual hierarchy between the label, value, and icon."
+    },
+    "js": {
+        "title": "JavaScript Logic",
+        "description": "For a static display, no JavaScript is required. In a real-world application, JavaScript would be used to fetch and update the numerical value dynamically from a data source."
+    },
+    "quiz": {
+        "title": "Stat Block Quiz",
+        "description": "Test your knowledge on stat blocks.",
+        "questions": [
+            {
+                "question": "What does KPI stand for?",
+                "answers": [
+                    "Key Performance Indicator",
+                    "Key Programming Interface",
+                    "Known Process Information"
+                ],
+                "answer": "Key Performance Indicator"
+            },
+            {
+                "question": "What is the most important design goal for a stat block?",
+                "answers": [
+                    "To be as colorful as possible",
+                    "To clearly and quickly communicate a key piece of data",
+                    "To include as much text as possible"
+                ],
+                "answer": "To clearly and quickly communicate a key piece of data"
+            }
+        ]
+    }
+}

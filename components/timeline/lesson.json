@@ -1,0 +1,45 @@
+{
+    "title": "Timeline / Activity Feed",
+    "description": "Timelines are perfect for showing a sequence of events in chronological order, such as a project's history, user activity, or version updates.",
+    "keywords": ["timeline", "activity", "feed", "events", "history"],
+    "overview": {
+        "title": "Overview of Timelines",
+        "description": "A timeline provides a clear, chronological visualization of events or posts. It's an effective way to tell a story or show progress over time. This example uses a vertical layout, which is common for activity feeds."
+    },
+    "html": {
+        "title": "HTML Structure",
+        "description": "An ordered list (`<ol>`) is used for the timeline, with each list item (`<li>`) representing an event. A border on the list creates the central vertical line. Icons are placed absolutely relative to each list item."
+    },
+    "css": {
+        "title": "CSS Styling",
+        "description": "The styling relies on relative and absolute positioning. The main line is a left border on the `<ol>` element. The icons or dots for each event are positioned absolutely to sit on top of this line, creating the classic timeline look."
+    },
+    "js": {
+        "title": "JavaScript Logic",
+        "description": "For a static timeline like this example, no JavaScript is necessary. In a dynamic application, JS would be used to fetch event data and render the list items into the DOM."
+    },
+    "quiz": {
+        "title": "Timeline Quiz",
+        "description": "Test your knowledge on timelines.",
+        "questions": [
+            {
+                "question": "What is the key characteristic of a timeline component?",
+                "answers": [
+                    "It displays data in a table",
+                    "It displays events in chronological order",
+                    "It is always horizontal"
+                ],
+                "answer": "It displays events in chronological order"
+            },
+            {
+                "question": "In the provided example, how is the main vertical line of the timeline created?",
+                "answers": [
+                    "Using a very tall background image",
+                    "Using JavaScript to draw a line",
+                    "Using the left border of the `<ol>` element"
+                ],
+                "answer": "Using the left border of the `<ol>` element"
+            }
+        ]
+    }
+}

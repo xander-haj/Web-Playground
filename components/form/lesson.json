@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Form Component", "description": "Forms are used to collect user input." },
+  "html": { "title": "HTML", "code": "<form><!-- ... --></form>" },
+  "css": { "title": "CSS", "code": "/* Form styles */" },
+  "js": { "title": "JavaScript", "description": "JS is used for client-side validation and submission." },
+  "best-practices": { "title": "Best Practices", "points": ["Always associate labels with form controls."] },
+  "props": [],
+  "quiz": {
+    "title": "Form Quiz",
+    "questions": [
+      {
+        "question": "What is the primary purpose of the <form> element?",
+        "answers": [ "To group content for styling", "To create a container for user-input controls", "To display a section of a document", "To define a hyperlink" ],
+        "answer": "To create a container for user-input controls"
+      }
+    ]
+  }
+}

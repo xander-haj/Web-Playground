@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Links Component", "description": "Links, or anchor tags (<a>), are used for navigation." },
+  "html": { "title": "HTML", "code": "<a href=\"#\">A link</a>" },
+  "css": { "title": "CSS", "code": "a { color: blue; }" },
+  "js": { "title": "JavaScript", "description": "Can be used to prevent default navigation behavior." },
+  "best-practices": { "title": "Best Practices", "points": ["Link text should be descriptive of the destination."] },
+  "props": [],
+  "quiz": {
+    "title": "Links Quiz",
+    "questions": [
+      {
+        "question": "What attribute specifies the URL for a link?",
+        "answers": [ "src", "link", "href", "url" ],
+        "answer": "href"
+      }
+    ]
+  }
+}

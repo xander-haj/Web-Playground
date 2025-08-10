@@ -1,0 +1,15 @@
+[role="tab"] {
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.vertical-tab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    text-align: left;
+    transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}

@@ -1,0 +1,45 @@
+{
+    "title": "Pagination",
+    "description": "Pagination is used for splitting up content into several pages, improving user experience and page performance for large datasets.",
+    "keywords": ["pagination", "navigation", "pages", "content"],
+    "overview": {
+        "title": "Overview of Pagination",
+        "description": "Pagination components are crucial for navigating through large sets of data, such as blog posts, product listings, or search results. They typically include numbered pages, along with 'Previous' and 'Next' buttons."
+    },
+    "html": {
+        "title": "HTML Structure",
+        "description": "The structure uses a `<nav>` element for accessibility, with a series of `<a>` tags for page numbers and navigation arrows. `data-page` attributes are used to identify the action of each link for the JavaScript."
+    },
+    "css": {
+        "title": "CSS Styling",
+        "description": "Styling focuses on clearly indicating the current page, interactive states (hover), and disabled states for arrows. The `.active` class is used to highlight the current page."
+    },
+    "js": {
+        "title": "JavaScript Logic",
+        "description": "The script adds event listeners to the pagination links. It manages the 'active' state, updates the UI to reflect the current page, and handles the logic for 'Previous' and 'Next' buttons."
+    },
+    "quiz": {
+        "title": "Pagination Quiz",
+        "description": "Test your knowledge on pagination components.",
+        "questions": [
+            {
+                "question": "What is the primary purpose of a pagination component?",
+                "answers": [
+                    "To split large amounts of content across multiple pages",
+                    "To create a site map",
+                    "To link to external websites"
+                ],
+                "answer": "To split large amounts of content across multiple pages"
+            },
+            {
+                "question": "Which HTML element is most appropriate for wrapping a pagination component for accessibility?",
+                "answers": [
+                    "<div>",
+                    "<span>",
+                    "<nav>"
+                ],
+                "answer": "<nav>"
+            }
+        ]
+    }
+}

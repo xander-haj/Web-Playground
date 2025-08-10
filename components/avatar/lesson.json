@@ -1,0 +1,60 @@
+{
+  "overview": {
+    "title": "Avatar Component",
+    "description": "Avatars represent users or entities with an image, initials, or an icon. They can also show presence with a small status dot."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<div class=\"avatar avatar-md avatar-circle\">\n  <img class=\"avatar-img\" src=\"avatar.jpg\" alt=\"Ada Lovelace\">\n  <span class=\"avatar-status status-online\"></span>\n</div>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript is optional; you can add lightweight interactivity, like toggling an online/offline status for demos."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Always include meaningful alt text for avatars that convey identity.",
+      "Use a decorative alt=\"\" only if a nearby label already conveys the person’s name.",
+      "Ensure focus styles when avatars are interactive (e.g., used as buttons).",
+      "Provide fallbacks such as initials when an image fails to load.",
+      "Keep status indicators large enough to be visible against the avatar edge."
+    ]
+  },
+  "props": [
+    {
+      "name": "size",
+      "type": "'sm'|'md'|'lg'",
+      "description": "Visual size of the avatar."
+    },
+    {
+      "name": "shape",
+      "type": "'circle'|'square'",
+      "description": "Border radius / shape style."
+    },
+    {
+      "name": "status",
+      "type": "'online'|'offline'|null",
+      "description": "Optional presence indicator."
+    }
+  ],
+  "quiz": {
+    "title": "Avatar Quiz",
+    "questions": [
+      {
+        "question": "When an avatar image is purely decorative and a nearby label already names the person, what should the <img> alt attribute be?",
+        "answers": [
+          "alt should repeat the name",
+          "alt should describe the image",
+          "alt=\"\"",
+          "omit the alt attribute entirely"
+        ],
+        "answer": "alt=\"\""
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+.search-container {
+  position: relative;
+}
+
+#suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-top: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+#suggestions-list li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+#suggestions-list li:hover, #suggestions-list li.active {
+  background-color: #eef2ff;
+  color: #3730a3;
+}

@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Dropdown Component", "description": "Dropdowns present a list of options from which a user can select." },
+  "html": { "title": "HTML", "code": "<!-- Dropdown HTML structure -->" },
+  "css": { "title": "CSS", "code": "/* Dropdown styles */" },
+  "js": { "title": "JavaScript", "description": "JS is required to toggle the visibility of the dropdown menu." },
+  "best-practices": { "title": "Best Practices", "points": ["Ensure keyboard navigation is supported."] },
+  "props": [],
+  "quiz": {
+    "title": "Dropdown Quiz",
+    "questions": [
+      {
+        "question": "A dropdown is best used for...",
+        "answers": [ "Displaying a large block of text", "A list of navigation links", "Selecting one option from a list", "Showing a confirmation message" ],
+        "answer": "Selecting one option from a list"
+      }
+    ]
+  }
+}

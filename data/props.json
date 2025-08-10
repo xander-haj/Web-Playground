@@ -1,0 +1,755 @@
+{
+  "button": [
+    {
+      "name": "text",
+      "type": "text",
+      "label": "Button Text",
+      "selector": ".btn",
+      "defaultValue": "Click Me"
+    },
+    {
+      "name": "backgroundColor",
+      "type": "color",
+      "label": "Background Color",
+      "cssProperty": "--btn-bg-color",
+      "defaultValue": "#4f46e5"
+    },
+    {
+      "name": "textColor",
+      "type": "color",
+      "label": "Text Color",
+      "cssProperty": "--btn-text-color",
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "borderRadius",
+      "type": "text",
+      "label": "Border Radius",
+      "cssProperty": "--btn-border-radius",
+      "defaultValue": "0.375rem"
+    }
+  ],
+  "modal": [
+    {
+      "name": "title",
+      "type": "text",
+      "label": "Modal Title",
+      "defaultValue": "Example Modal"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "label": "Modal Width (px)",
+      "defaultValue": 480
+    },
+    {
+      "name": "overlayColor",
+      "type": "color",
+      "label": "Overlay Color",
+      "defaultValue": "#000000"
+    },
+    {
+      "name": "overlayOpacity",
+      "type": "number",
+      "label": "Overlay Opacity (0-1)",
+      "defaultValue": 0.6
+    },
+    {
+      "name": "dismissOnOutsideClick",
+      "type": "boolean",
+      "label": "Dismiss on Outside Click",
+      "defaultValue": true
+    }
+  ],
+  "accordion": [
+    {
+      "name": "allowMultiple",
+      "type": "boolean",
+      "label": "Allow Multiple Open",
+      "defaultValue": false
+    },
+    {
+      "name": "itemGap",
+      "type": "number",
+      "label": "Item Gap (px)",
+      "defaultValue": 8
+    },
+    {
+      "name": "chevronPosition",
+      "type": "select",
+      "label": "Chevron Position",
+      "options": [
+        "left",
+        "right"
+      ],
+      "defaultValue": "right"
+    }
+  ],
+  "headings": [
+    {
+      "name": "headingText",
+      "type": "text",
+      "label": "Heading Text",
+      "selector": "h1",
+      "defaultValue": "Main Heading"
+    },
+    {
+      "name": "headingColor",
+      "type": "color",
+      "label": "Heading Color",
+      "cssProperty": "color",
+      "defaultValue": "#333333"
+    }
+  ],
+  "paragraphs": [
+    {
+      "name": "paragraphText",
+      "type": "text",
+      "label": "Paragraph Text",
+      "selector": "p",
+      "defaultValue": "This is a sample paragraph demonstrating text content."
+    },
+    {
+      "name": "fontSize",
+      "type": "text",
+      "label": "Font Size",
+      "cssProperty": "font-size",
+      "defaultValue": "1rem"
+    },
+    {
+      "name": "textColor",
+      "type": "color",
+      "label": "Text Color",
+      "cssProperty": "color",
+      "defaultValue": "#333333"
+    }
+  ],
+  "links": [
+    {
+      "name": "linkText",
+      "type": "text",
+      "label": "Link Text",
+      "selector": "a",
+      "defaultValue": "Example Link"
+    },
+    {
+      "name": "linkColor",
+      "type": "color",
+      "label": "Link Color",
+      "cssProperty": "color",
+      "defaultValue": "#007acc"
+    }
+  ],
+  "lists": [
+    {
+      "name": "listType",
+      "type": "select",
+      "label": "List Type",
+      "options": [
+        "ul",
+        "ol",
+        "dl"
+      ],
+      "defaultValue": "ul"
+    },
+    {
+      "name": "itemGap",
+      "type": "number",
+      "label": "Item Gap (px)",
+      "defaultValue": 6
+    }
+  ],
+  "table": [
+    {
+      "name": "striped",
+      "type": "boolean",
+      "label": "Striped Rows",
+      "defaultValue": true
+    },
+    {
+      "name": "hover",
+      "type": "boolean",
+      "label": "Hover Highlight",
+      "defaultValue": true
+    },
+    {
+      "name": "density",
+      "type": "select",
+      "label": "Density",
+      "options": [
+        "compact",
+        "normal",
+        "spacious"
+      ],
+      "defaultValue": "normal"
+    },
+    {
+      "name": "borderColor",
+      "type": "color",
+      "label": "Border Color",
+      "defaultValue": "#e5e7eb"
+    }
+  ],
+  "form": [
+    {
+      "name": "method",
+      "type": "select",
+      "label": "Method",
+      "options": [
+        "get",
+        "post"
+      ],
+      "defaultValue": "post"
+    },
+    {
+      "name": "action",
+      "type": "text",
+      "label": "Action URL",
+      "defaultValue": "#"
+    },
+    {
+      "name": "gap",
+      "type": "number",
+      "label": "Field Gap (px)",
+      "defaultValue": 12
+    }
+  ],
+  "label": [
+    {
+      "name": "labelText",
+      "type": "text",
+      "label": "Label Text",
+      "selector": "label",
+      "defaultValue": "Form Label"
+    },
+    {
+      "name": "labelColor",
+      "type": "color",
+      "label": "Label Color",
+      "cssProperty": "color",
+      "defaultValue": "#333333"
+    }
+  ],
+  "input": [
+    {
+      "name": "placeholder",
+      "type": "text",
+      "label": "Placeholder Text",
+      "attribute": "placeholder",
+      "defaultValue": "Enter text here..."
+    },
+    {
+      "name": "borderColor",
+      "type": "color",
+      "label": "Border Color",
+      "cssProperty": "border-color",
+      "defaultValue": "#cccccc"
+    }
+  ],
+  "textarea": [
+    {
+      "name": "placeholder",
+      "type": "text",
+      "label": "Placeholder Text",
+      "attribute": "placeholder",
+      "defaultValue": "Enter your message..."
+    },
+    {
+      "name": "rows",
+      "type": "text",
+      "label": "Number of Rows",
+      "attribute": "rows",
+      "defaultValue": "4"
+    }
+  ],
+  "select": [
+    {
+      "name": "placeholder",
+      "type": "text",
+      "label": "Placeholder",
+      "defaultValue": "Select an option..."
+    },
+    {
+      "name": "multiple",
+      "type": "boolean",
+      "label": "Allow Multiple",
+      "defaultValue": false
+    },
+    {
+      "name": "borderColor",
+      "type": "color",
+      "label": "Border Color",
+      "defaultValue": "#d1d5db"
+    }
+  ],
+  "tabs": [
+    {
+      "name": "activeIndex",
+      "type": "number",
+      "label": "Active Tab Index",
+      "defaultValue": 0,
+      "min": 0
+    },
+    {
+      "name": "orientation",
+      "type": "select",
+      "label": "Orientation",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
+    }
+  ],
+  "tooltip": [
+    {
+      "name": "text",
+      "type": "text",
+      "label": "Tooltip Text",
+      "defaultValue": "Helpful info"
+    },
+    {
+      "name": "placement",
+      "type": "select",
+      "label": "Placement",
+      "options": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "name": "delay",
+      "type": "number",
+      "label": "Show Delay (ms)",
+      "defaultValue": 150
+    }
+  ],
+  "dropdown": [
+    {
+      "name": "label",
+      "type": "text",
+      "label": "Trigger Label",
+      "defaultValue": "Open Menu"
+    },
+    {
+      "name": "align",
+      "type": "select",
+      "label": "Menu Alignment",
+      "options": [
+        "start",
+        "center",
+        "end"
+      ],
+      "defaultValue": "start"
+    },
+    {
+      "name": "maxHeight",
+      "type": "number",
+      "label": "Menu Max Height (px)",
+      "defaultValue": 240
+    }
+  ],
+  "checkbox": [
+    {
+      "name": "label",
+      "type": "text",
+      "label": "Label",
+      "defaultValue": "Accept terms"
+    },
+    {
+      "name": "checked",
+      "type": "boolean",
+      "label": "Checked",
+      "defaultValue": false
+    },
+    {
+      "name": "size",
+      "type": "select",
+      "label": "Size",
+      "options": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "defaultValue": "md"
+    }
+  ],
+  "radio_group": [
+    {
+      "name": "name",
+      "type": "text",
+      "label": "Group Name",
+      "defaultValue": "choices"
+    },
+    {
+      "name": "value",
+      "type": "text",
+      "label": "Selected Value",
+      "defaultValue": "a"
+    },
+    {
+      "name": "itemGap",
+      "type": "number",
+      "label": "Item Gap (px)",
+      "defaultValue": 8
+    }
+  ],
+  "toggle_switch": [
+    {
+      "name": "checked",
+      "type": "boolean",
+      "label": "Checked",
+      "defaultValue": false
+    },
+    {
+      "name": "onColor",
+      "type": "color",
+      "label": "On Color",
+      "defaultValue": "#16a34a"
+    },
+    {
+      "name": "offColor",
+      "type": "color",
+      "label": "Off Color",
+      "defaultValue": "#d1d5db"
+    }
+  ],
+  "range_slider": [
+    {
+      "name": "min",
+      "type": "number",
+      "label": "Min",
+      "defaultValue": 0
+    },
+    {
+      "name": "max",
+      "type": "number",
+      "label": "Max",
+      "defaultValue": 100
+    },
+    {
+      "name": "step",
+      "type": "number",
+      "label": "Step",
+      "defaultValue": 1
+    },
+    {
+      "name": "value",
+      "type": "number",
+      "label": "Value",
+      "defaultValue": 50
+    }
+  ],
+  "file_upload": [
+    {
+      "name": "accept",
+      "type": "text",
+      "label": "Accept (MIME types)",
+      "defaultValue": ".png,.jpg,.pdf"
+    },
+    {
+      "name": "multiple",
+      "type": "boolean",
+      "label": "Allow Multiple",
+      "defaultValue": true
+    }
+  ],
+  "date_picker": [
+    {
+      "name": "value",
+      "type": "text",
+      "label": "Date Value (YYYY-MM-DD)",
+      "defaultValue": "2025-01-01"
+    },
+    {
+      "name": "min",
+      "type": "text",
+      "label": "Min Date",
+      "defaultValue": "2024-01-01"
+    },
+    {
+      "name": "max",
+      "type": "text",
+      "label": "Max Date",
+      "defaultValue": "2026-12-31"
+    }
+  ],
+  "search_input": [
+    {
+      "name": "placeholder",
+      "type": "text",
+      "label": "Placeholder",
+      "defaultValue": "Search..."
+    },
+    {
+      "name": "debounceMs",
+      "type": "number",
+      "label": "Debounce (ms)",
+      "defaultValue": 200
+    }
+  ],
+  "multi_select_dropdown": [
+    {
+      "name": "selected",
+      "type": "text",
+      "label": "Initial Selected (comma-separated)",
+      "defaultValue": "Alpha,Beta"
+    },
+    {
+      "name": "maxSelected",
+      "type": "number",
+      "label": "Max Selected",
+      "defaultValue": 5
+    }
+  ],
+  "card": [
+    {
+      "name": "boxShadow",
+      "type": "text",
+      "label": "Box Shadow",
+      "selector": ".card",
+      "cssProperty": "box-shadow",
+      "defaultValue": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
+    }
+  ],
+  "badge": [
+    {
+      "name": "text",
+      "type": "text",
+      "label": "Badge Text",
+      "defaultValue": "New"
+    },
+    {
+      "name": "variant",
+      "type": "select",
+      "label": "Variant",
+      "options": [
+        "neutral",
+        "success",
+        "warning",
+        "error",
+        "info"
+      ],
+      "defaultValue": "neutral"
+    },
+    {
+      "name": "backgroundColor",
+      "type": "color",
+      "label": "Background Color",
+      "defaultValue": "#eef2ff"
+    },
+    {
+      "name": "textColor",
+      "type": "color",
+      "label": "Text Color",
+      "defaultValue": "#4338ca"
+    }
+  ],
+  "avatar": [
+    {
+      "name": "src",
+      "type": "text",
+      "label": "Image URL",
+      "defaultValue": "https://picsum.photos/200"
+    },
+    {
+      "name": "alt",
+      "type": "text",
+      "label": "Alt Text",
+      "defaultValue": "User Avatar"
+    },
+    {
+      "name": "shape",
+      "type": "select",
+      "label": "Shape",
+      "options": [
+        "circle",
+        "rounded",
+        "square"
+      ],
+      "defaultValue": "circle"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "label": "Size (px)",
+      "defaultValue": 48
+    }
+  ],
+  "progress_bar": [
+    {
+      "name": "barColor",
+      "type": "color",
+      "label": "Progress Bar Color",
+      "selector": ".progress-fill",
+      "cssProperty": "background-color",
+      "defaultValue": "#4f46e5"
+    }
+  ],
+  "stat_block": [
+    {
+      "name": "label",
+      "type": "text",
+      "label": "Label",
+      "defaultValue": "Active Users"
+    },
+    {
+      "name": "value",
+      "type": "number",
+      "label": "Value",
+      "defaultValue": 1280
+    },
+    {
+      "name": "unit",
+      "type": "text",
+      "label": "Unit",
+      "defaultValue": ""
+    },
+    {
+      "name": "delta",
+      "type": "number",
+      "label": "Delta",
+      "defaultValue": 5
+    },
+    {
+      "name": "trend",
+      "type": "select",
+      "label": "Trend",
+      "options": [
+        "up",
+        "down",
+        "flat"
+      ],
+      "defaultValue": "up"
+    }
+  ],
+  "timeline": [
+    {
+      "name": "orientation",
+      "type": "select",
+      "label": "Orientation",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "vertical"
+    },
+    {
+      "name": "itemGap",
+      "type": "number",
+      "label": "Item Gap (px)",
+      "defaultValue": 12
+    }
+  ],
+  "toast": [
+    {
+      "name": "message",
+      "type": "text",
+      "label": "Message",
+      "defaultValue": "Saved successfully"
+    },
+    {
+      "name": "type",
+      "type": "select",
+      "label": "Type",
+      "options": [
+        "success",
+        "warning",
+        "error",
+        "info"
+      ],
+      "defaultValue": "success"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "label": "Duration (ms)",
+      "defaultValue": 3000
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "name": "ariaLabel",
+      "type": "text",
+      "label": "ARIA Label",
+      "defaultValue": "breadcrumb"
+    },
+    {
+      "name": "separator",
+      "type": "text",
+      "label": "Separator",
+      "defaultValue": "/"
+    },
+    {
+      "name": "items",
+      "type": "text",
+      "label": "Items (Label:URL pairs)",
+      "defaultValue": "Home:#,Projects:#,My Project:#"
+    }
+  ],
+  "sidebar": [
+    {
+      "name": "width",
+      "type": "number",
+      "label": "Width (px)",
+      "defaultValue": 260
+    },
+    {
+      "name": "collapsible",
+      "type": "boolean",
+      "label": "Collapsible",
+      "defaultValue": true
+    },
+    {
+      "name": "collapsedByDefault",
+      "type": "boolean",
+      "label": "Collapsed by Default",
+      "defaultValue": false
+    }
+  ],
+  "pagination": [
+    {
+      "name": "totalPages",
+      "type": "number",
+      "label": "Total Pages",
+      "defaultValue": 10,
+      "min": 1
+    },
+    {
+      "name": "currentPage",
+      "type": "number",
+      "label": "Current Page",
+      "defaultValue": 1,
+      "min": 1
+    },
+    {
+      "name": "size",
+      "type": "select",
+      "label": "Size",
+      "options": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "defaultValue": "md"
+    }
+  ],
+  "stepper": [
+    {
+      "name": "steps",
+      "type": "text",
+      "label": "Steps (comma-separated)",
+      "defaultValue": "Account,Details,Confirm"
+    },
+    {
+      "name": "activeIndex",
+      "type": "number",
+      "label": "Active Step Index",
+      "defaultValue": 0,
+      "min": 0
+    }
+  ]
+}

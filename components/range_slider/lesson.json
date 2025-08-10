@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Range Slider Component",
+    "description": "A range slider lets users pick a numeric value from a bounded interval."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<input type=\\\"range\\\" min=\\\"0\\\" max=\\\"100\\\" value=\\\"50\\\" aria-label=\\\"Volume\\\">"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript reads the input event to update live output and sync value with application state."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Expose the current value via aria-valuenow when building custom roles.",
+      "Ensure the slider can be operated via keyboard (Arrow keys, Home/End, PageUp/PageDown).",
+      "Provide clear min/max semantics and steps.",
+      "Maintain a large enough thumb for touch interactions.",
+      "Do not rely on color alone to convey value."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Range Slider Quiz",
+    "questions": [
+      {
+        "question": "Which keyboard keys typically nudge the slider by small steps?",
+        "answers": [
+          "Arrow keys",
+          "F1/F2",
+          "Tab/Shift+Tab",
+          "Esc"
+        ],
+        "answer": "Arrow keys"
+      }
+    ]
+  }
+}

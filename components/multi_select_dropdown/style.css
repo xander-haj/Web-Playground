@@ -1,0 +1,32 @@
+.multi-select-container {
+  position: relative;
+}
+
+.multi-select-panel {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.selected-item-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #eef2ff;
+  color: #4338ca;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.selected-item-pill button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 0.25rem;
+}
+
+.selected-item-pill button:hover {
+    color: #3730a3;
+}

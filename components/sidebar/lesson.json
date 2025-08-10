@@ -1,0 +1,45 @@
+{
+    "title": "Sidebar Navigation",
+    "description": "Sidebars provide navigation that is typically positioned to the left or right of the main content area, often used for app menus or filtering options.",
+    "keywords": ["sidebar", "navigation", "menu", "layout", "collapsible"],
+    "overview": {
+        "title": "Overview of Sidebars",
+        "description": "A sidebar is a common UI pattern for primary navigation. It can be permanently visible on larger screens or collapsible on smaller screens to save space. This example shows a collapsible sidebar that is toggled with a button."
+    },
+    "html": {
+        "title": "HTML Structure",
+        "description": "The HTML includes a toggle button, the main content area, the sidebar container itself with navigation links, and an overlay div to dim the main content when the sidebar is open."
+    },
+    "css": {
+        "title": "CSS Styling",
+        "description": "CSS is used to position the sidebar off-screen by default and transition it into view when an 'open' class is applied. The overlay is also styled to be hidden by default and faded in. Transitions make the opening and closing smooth."
+    },
+    "js": {
+        "title": "JavaScript Logic",
+        "description": "The JavaScript handles the click events on the toggle button and the overlay. It adds or removes the 'open' class from the sidebar and overlay elements to control their visibility."
+    },
+    "quiz": {
+        "title": "Sidebar Quiz",
+        "description": "Test your knowledge on sidebars.",
+        "questions": [
+            {
+                "question": "What is a common behavior for sidebars on mobile devices?",
+                "answers": [
+                    "They are always visible",
+                    "They are hidden by default and can be toggled",
+                    "They are displayed at the bottom of the screen"
+                ],
+                "answer": "They are hidden by default and can be toggled"
+            },
+            {
+                "question": "In this implementation, what does the overlay element do?",
+                "answers": [
+                    "Displays additional navigation links",
+                    "Dims the main content and allows closing the sidebar by clicking on it",
+                    "Contains the sidebar's content"
+                ],
+                "answer": "Dims the main content and allows closing the sidebar by clicking on it"
+            }
+        ]
+    }
+}

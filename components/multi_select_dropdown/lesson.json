@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Multi-Select Dropdown Component",
+    "description": "A multi-select dropdown allows users to choose multiple options from a collapsible list; selections are often displayed as pills."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<button id=\\\"multi-select-toggle\\\" aria-haspopup=\\\"listbox\\\" aria-expanded=\\\"false\\\">Select options</button>\\n<ul id=\\\"multi-select-panel\\\" role=\\\"listbox\\\" aria-multiselectable=\\\"true\\\" hidden>\\n  <li role=\\\"option\\\" aria-selected=\\\"false\\\">Option A</li>\\n  <li role=\\\"option\\\" aria-selected=\\\"false\\\">Option B</li>\\n</ul>\\n<div id=\\\"selected-items-display\\\"></div>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript opens/closes the panel, toggles selection state per option, and updates the displayed pills or summary label."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Keep selections visible and easy to clear.",
+      "Support keyboard navigation and typeahead in long lists.",
+      "Announce changes via aria-checked and aria-selected as appropriate.",
+      "Avoid closing the menu on every selection to speed multi-pick workflows.",
+      "Provide a clear 'Clear all' affordance."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Multi-Select Dropdown Quiz",
+    "questions": [
+      {
+        "question": "What ARIA attribute typically reflects an option’s selected state in a multi-select listbox?",
+        "answers": [
+          "aria-expanded",
+          "aria-current",
+          "aria-checked",
+          "aria-valuenow"
+        ],
+        "answer": "aria-checked"
+      }
+    ]
+  }
+}

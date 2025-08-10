@@ -1,0 +1,14 @@
+#drop-zone {
+  transition: border-color 200ms, background-color 200ms;
+}
+
+#drop-zone.drag-over {
+  border-color: #4f46e5;
+  background-color: #eef2ff;
+}
+
+#preview-container .preview-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Breadcrumbs Component",
+    "description": "Breadcrumbs show the current page’s location within a navigational hierarchy. They improve wayfinding and allow quick jumps back to higher-level pages."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<nav aria-label=\"breadcrumb\" class=\"breadcrumb-nav\">\n  <ol>\n    <li class=\"breadcrumb-item\"><a href=\"#\" class=\"breadcrumb-link\">Home</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\" class=\"breadcrumb-link\">Library</a></li>\n    <li class=\"breadcrumb-item\"><span class=\"breadcrumb-current\" aria-current=\"page\">Data</span></li>\n  </ol>\n</nav>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript can progressively enhance breadcrumbs (e.g., converting a clicked ancestor into the current item in a local demo)."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Wrap breadcrumbs in <nav aria-label=\"breadcrumb\"> for accessibility.",
+      "Use an ordered list (<ol>) of list items (<li>) for structure.",
+      "Visually separate items with CSS; do not rely solely on the “/” character.",
+      "Mark only the last item with aria-current=\"page\"; ancestors must be links.",
+      "Ensure sufficient color contrast for links vs. current item."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Breadcrumbs Quiz",
+    "questions": [
+      {
+        "question": "Which ARIA label is recommended on the breadcrumb navigation container?",
+        "answers": [
+          "breadcrumb",
+          "navigation",
+          "main",
+          "toolbar"
+        ],
+        "answer": "breadcrumb"
+      }
+    ]
+  }
+}

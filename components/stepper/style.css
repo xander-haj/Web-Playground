@@ -1,0 +1,27 @@
+.stepper-link {
+    border-color: #d1d5db; /* gray-300 */
+}
+
+.stepper-link:hover {
+    border-color: #9ca3af; /* gray-400 */
+}
+
+.stepper-step.is-active .stepper-link {
+    border-color: #4f46e5; /* indigo-600 */
+}
+
+.stepper-step.is-active .stepper-step-number {
+    color: #4f46e5; /* indigo-600 */
+}
+
+.stepper-step.is-complete .stepper-link {
+    border-color: #16a34a; /* green-600 */
+}
+
+.stepper-step.is-complete .stepper-link:hover {
+    border-color: #15803d; /* green-700 */
+}
+
+.stepper-step.is-complete .stepper-step-number {
+    color: #16a34a; /* green-600 */
+}

@@ -1,0 +1,737 @@
+{
+  "select": {
+    "title": "Select Practice",
+    "description": "Hands-on exercises to implement and customize the Select component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Select to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Select following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Select to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Select with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "modal": {
+    "title": "Modal Practice",
+    "description": "Hands-on exercises to implement and customize the Modal component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Modal to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Modal following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Modal to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Modal with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "toggle_switch": {
+    "title": "Toggle Switch Practice",
+    "description": "Hands-on exercises to implement and customize the Toggle Switch component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Toggle Switch to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Toggle Switch following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Toggle Switch to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Toggle Switch with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "tabs": {
+    "title": "Tabs Practice",
+    "description": "Hands-on exercises to implement and customize the Tabs component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Tabs to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Tabs following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Tabs to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Tabs with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "lists": {
+    "title": "Lists Practice",
+    "description": "Hands-on exercises to implement and customize the Lists component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Lists to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Lists following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Lists to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Lists with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "search_input": {
+    "title": "Search Input Practice",
+    "description": "Hands-on exercises to implement and customize the Search Input component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Search Input to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Search Input following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Search Input to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Search Input with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "multi_select_dropdown": {
+    "title": "Multi Select Dropdown Practice",
+    "description": "Hands-on exercises to implement and customize the Multi Select Dropdown component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Multi Select Dropdown to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Multi Select Dropdown following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Multi Select Dropdown to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Multi Select Dropdown with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "file_upload": {
+    "title": "File Upload Practice",
+    "description": "Hands-on exercises to implement and customize the File Upload component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic File Upload to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working File Upload following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the File Upload to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the File Upload with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "range_slider": {
+    "title": "Range Slider Practice",
+    "description": "Hands-on exercises to implement and customize the Range Slider component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Range Slider to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Range Slider following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Range Slider to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Range Slider with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "date_picker": {
+    "title": "Date Picker Practice",
+    "description": "Hands-on exercises to implement and customize the Date Picker component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Date Picker to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Date Picker following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Date Picker to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Date Picker with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "checkbox": {
+    "title": "Checkbox Practice",
+    "description": "Hands-on exercises to implement and customize the Checkbox component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Checkbox to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Checkbox following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Checkbox to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Checkbox with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "input": {
+    "title": "Input Practice",
+    "description": "Hands-on exercises to implement and customize the Input component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Input to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Input following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Input to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Input with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "toast": {
+    "title": "Toast Practice",
+    "description": "Hands-on exercises to implement and customize the Toast component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Toast to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Toast following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Toast to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Toast with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "avatar": {
+    "title": "Avatar Practice",
+    "description": "Hands-on exercises to implement and customize the Avatar component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Avatar to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Avatar following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Avatar to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Avatar with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "table": {
+    "title": "Table Practice",
+    "description": "Hands-on exercises to implement and customize the Table component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Table to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Table following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Table to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Table with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "paragraphs": {
+    "title": "Paragraphs Practice",
+    "description": "Hands-on exercises to implement and customize the Paragraphs component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Paragraphs to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Paragraphs following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Paragraphs to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Paragraphs with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "badge": {
+    "title": "Badge Practice",
+    "description": "Hands-on exercises to implement and customize the Badge component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Badge to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Badge following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Badge to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Badge with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "form": {
+    "title": "Form Practice",
+    "description": "Hands-on exercises to implement and customize the Form component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Form to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Form following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Form to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Form with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "accordion": {
+    "title": "Accordion Practice",
+    "description": "Hands-on exercises to implement and customize the Accordion component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Accordion to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Accordion following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Accordion to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Accordion with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Timeline Practice",
+    "description": "Hands-on exercises to implement and customize the Timeline component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Timeline to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Timeline following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Timeline to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Timeline with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "stat_block": {
+    "title": "Stat Block Practice",
+    "description": "Hands-on exercises to implement and customize the Stat Block component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Stat Block to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Stat Block following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Stat Block to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Stat Block with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "sidebar": {
+    "title": "Sidebar Practice",
+    "description": "Hands-on exercises to implement and customize the Sidebar component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Sidebar to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Sidebar following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Sidebar to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Sidebar with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "progress_bar": {
+    "title": "Progress Bar Practice",
+    "description": "Hands-on exercises to implement and customize the Progress Bar component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Progress Bar to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Progress Bar following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Progress Bar to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Progress Bar with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "card": {
+    "title": "Card Practice",
+    "description": "Hands-on exercises to implement and customize the Card component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Card to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Card following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Card to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Card with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "label": {
+    "title": "Label Practice",
+    "description": "Hands-on exercises to implement and customize the Label component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Label to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Label following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Label to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Label with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "tooltip": {
+    "title": "Tooltip Practice",
+    "description": "Hands-on exercises to implement and customize the Tooltip component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Tooltip to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Tooltip following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Tooltip to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Tooltip with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "headings": {
+    "title": "Headings Practice",
+    "description": "Hands-on exercises to implement and customize the Headings component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Headings to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Headings following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Headings to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Headings with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "button": {
+    "title": "Button Practice",
+    "description": "Hands-on exercises to implement and customize the Button component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Button to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Button following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Button to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Button with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "dropdown": {
+    "title": "Dropdown Practice",
+    "description": "Hands-on exercises to implement and customize the Dropdown component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Dropdown to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Dropdown following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Dropdown to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Dropdown with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "textarea": {
+    "title": "Textarea Practice",
+    "description": "Hands-on exercises to implement and customize the Textarea component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Textarea to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Textarea following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Textarea to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Textarea with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "radio_group": {
+    "title": "Radio Group Practice",
+    "description": "Hands-on exercises to implement and customize the Radio Group component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Radio Group to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Radio Group following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Radio Group to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Radio Group with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "breadcrumbs": {
+    "title": "Breadcrumbs Practice",
+    "description": "Hands-on exercises to implement and customize the Breadcrumbs component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Breadcrumbs to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Breadcrumbs following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Breadcrumbs to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Breadcrumbs with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "stepper": {
+    "title": "Stepper Practice",
+    "description": "Hands-on exercises to implement and customize the Stepper component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Stepper to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Stepper following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Stepper to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Stepper with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "pagination": {
+    "title": "Pagination Practice",
+    "description": "Hands-on exercises to implement and customize the Pagination component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Pagination to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Pagination following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Pagination to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Pagination with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "links": {
+    "title": "Links Practice",
+    "description": "Hands-on exercises to implement and customize the Links component.",
+    "tasks": [
+      {
+        "prompt": "Add a basic Links to a blank page and ensure it is fully keyboard accessible.",
+        "expectedOutcome": "A working Links following semantic HTML and ARIA (if applicable).",
+        "difficulty": "beginner"
+      },
+      {
+        "prompt": "Style the Links to match your design system using CSS variables.",
+        "expectedOutcome": "Consistent colors, spacing, and typography shared with other components.",
+        "difficulty": "intermediate"
+      },
+      {
+        "prompt": "Add JavaScript to enhance the Links with interactive behavior.",
+        "expectedOutcome": "Graceful progressive enhancement without breaking basic functionality.",
+        "difficulty": "intermediate"
+      }
+    ]
+  }
+}

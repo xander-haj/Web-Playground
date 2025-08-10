@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Paragraphs Component", "description": "The <p> element represents a paragraph of text." },
+  "html": { "title": "HTML", "code": "<p>This is a paragraph.</p>" },
+  "css": { "title": "CSS", "code": "p { line-height: 1.5; }" },
+  "js": { "title": "JavaScript", "description": "No JS required." },
+  "best-practices": { "title": "Best Practices", "points": ["Do not use empty <p> tags for spacing; use CSS margins instead."] },
+  "props": [],
+  "quiz": {
+    "title": "Paragraphs Quiz",
+    "questions": [
+      {
+        "question": "Which tag is used to define a paragraph?",
+        "answers": [ "<span>", "<p>", "<div>", "<para>" ],
+        "answer": "<p>"
+      }
+    ]
+  }
+}

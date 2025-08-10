@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Label Component", "description": "The <label> element represents a caption for an item in a user interface." },
+  "html": { "title": "HTML", "code": "<label for=\"username\">Username</label>" },
+  "css": { "title": "CSS", "code": "label { font-weight: bold; }" },
+  "js": { "title": "JavaScript", "description": "No JS required." },
+  "best-practices": { "title": "Best Practices", "points": ["Always use the `for` attribute to link a label with its control."] },
+  "props": [],
+  "quiz": {
+    "title": "Label Quiz",
+    "questions": [
+      {
+        "question": "How do you associate a <label> with an <input> element?",
+        "answers": [ "By placing it nearby", "Using the `for` attribute matching the input's `id`", "Using the `name` attribute", "They are associated automatically" ],
+        "answer": "Using the `for` attribute matching the input's `id`"
+      }
+    ]
+  }
+}

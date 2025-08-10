@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Checkbox Component",
+    "description": "Checkboxes let users select one or more options from a list. They represent a boolean state."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<input type=\\\"checkbox\\\" id=\\\"terms\\\"><label for=\\\"terms\\\">I agree to the terms</label>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript can listen for change events to sync the value with application state."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Associate labels with inputs using for and id for a larger tap target.",
+      "Provide a clear, visible focus style for keyboard users.",
+      "Group related checkboxes in a fieldset with a legend.",
+      "Avoid using checkboxes for mutually exclusive choices; use radio buttons.",
+      "Ensure the checked state is conveyed with more than just color."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Checkbox Quiz",
+    "questions": [
+      {
+        "question": "How do you properly associate a text label with a checkbox for accessibility and larger click target?",
+        "answers": [
+          "Match label for to input id",
+          "Wrap the label in a div",
+          "Place the label after the checkbox",
+          "Give the label a tabindex"
+        ],
+        "answer": "Match label for to input id"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Card Component",
+    "description": "Cards group related information and actions into a contained block with an image, title, description, and footer actions."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<article class=\"card\">\n  <img class=\"card-image\" src=\"image.jpg\" alt=\"Cover image\">\n  <div class=\"card-body\">\n    <h3 class=\"card-title\">Card title</h3>\n    <p class=\"card-text\">Short description for the card.</p>\n  </div>\n  <footer class=\"card-footer\">\n    <button type=\"button\">Read More →</button>\n  </footer>\n</article>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript may be used to handle actions such as “Read more”, bookmarking, or opening a details view."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Keep content hierarchy clear: image > title > supporting text > actions.",
+      "Ensure text has adequate contrast over images or use overlays.",
+      "Tap targets (e.g., buttons) should be at least 44×44 px.",
+      "Do not rely solely on hover effects; provide visible focus states.",
+      "Avoid excessive shadow on mobile to reduce visual noise."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Card Quiz",
+    "questions": [
+      {
+        "question": "Which element best contains actions like 'Read more' in a card?",
+        "answers": [
+          "<header>",
+          "<footer>",
+          "<section>",
+          "<aside>"
+        ],
+        "answer": "<footer>"
+      }
+    ]
+  }
+}

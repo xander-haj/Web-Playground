@@ -1,0 +1,45 @@
+{
+    "title": "Stepper / Wizard",
+    "description": "Steppers guide users through a process by dividing it into a series of logical, numbered steps, like a checkout process or a setup wizard.",
+    "keywords": ["stepper", "wizard", "steps", "form", "progress"],
+    "overview": {
+        "title": "Overview of Steppers",
+        "description": "A stepper, or wizard, is a navigation component that displays progress through a sequence of steps. It's essential for user onboarding, multi-part forms, and any process that needs to be broken down into manageable chunks."
+    },
+    "html": {
+        "title": "HTML Structure",
+        "description": "An ordered list (`<ol>`) is used for the steps, which is semantically correct. Each `<li>` represents a step. Buttons are provided to navigate between the steps."
+    },
+    "css": {
+        "title": "CSS Styling",
+        "description": "CSS classes (`.is-complete`, `.is-active`) are used to visually distinguish between completed, active, and upcoming steps. Colors and borders are used to indicate the state of each step."
+    },
+    "js": {
+        "title": "JavaScript Logic",
+        "description": "The script manages the current step. It listens for clicks on the 'Next' and 'Previous' buttons, updates the active step, and changes the corresponding CSS classes to reflect the new state."
+    },
+    "quiz": {
+        "title": "Stepper Quiz",
+        "description": "Test your knowledge on steppers.",
+        "questions": [
+            {
+                "question": "What is the main benefit of using a stepper for a complex form?",
+                "answers": [
+                    "It makes the form look more complex",
+                    "It breaks the process into smaller, more manageable parts, reducing user cognitive load",
+                    "It allows submitting the form from any step"
+                ],
+                "answer": "It breaks the process into smaller, more manageable parts, reducing user cognitive load"
+            },
+            {
+                "question": "What semantic HTML element is best for a list of steps?",
+                "answers": [
+                    "<ul>",
+                    "<ol>",
+                    "<div>"
+                ],
+                "answer": "<ol>"
+            }
+        ]
+    }
+}

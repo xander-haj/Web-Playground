@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Search Input Component",
+    "description": "A search input optionally provides suggestions/autocomplete to help users find items quickly."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<input id=\\\"search-box\\\" type=\\\"search\\\" role=\\\"combobox\\\" aria-expanded=\\\"false\\\" aria-controls=\\\"suggestions-list\\\">\\n<ul id=\\\"suggestions-list\\\" role=\\\"listbox\\\" hidden></ul>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript filters suggestions on input, manages a highlighted index with Arrow keys, and writes the chosen value back to the field."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Use role=\\\"combobox\\\" on the input and role=\\\"listbox\\\"/\\\"option\\\" on the results.",
+      "Announce changes using aria-live or by updating aria-activedescendant.",
+      "Keep keyboard interaction consistent (Enter to select, Escape to close).",
+      "Ensure pointer and keyboard interactions stay in sync.",
+      "Debounce expensive remote lookups to reduce jitter."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Search Input Quiz",
+    "questions": [
+      {
+        "question": "Which role is typically used on the suggestions container for an autocomplete?",
+        "answers": [
+          "grid",
+          "menu",
+          "listbox",
+          "tabpanel"
+        ],
+        "answer": "listbox"
+      }
+    ]
+  }
+}

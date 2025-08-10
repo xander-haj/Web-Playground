@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Lists Component", "description": "HTML lists are used to group related items. There are ordered (<ol>), unordered (<ul>), and description (<dl>) lists." },
+  "html": { "title": "HTML", "code": "<ul><li>Item 1</li></ul>" },
+  "css": { "title": "CSS", "code": "ul { list-style-type: disc; }" },
+  "js": { "title": "JavaScript", "description": "No JS required." },
+  "best-practices": { "title": "Best Practices", "points": ["Choose the list type that semantically fits your content."] },
+  "props": [],
+  "quiz": {
+    "title": "Lists Quiz",
+    "questions": [
+      {
+        "question": "Which tag is used to create a numbered list?",
+        "answers": [ "<ul>", "<li>", "<dl>", "<ol>" ],
+        "answer": "<ol>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive HTML Component Playground</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="h-full font-sans antialiased">
+
+    <div class="flex h-screen text-gray-800">
+        <!-- Left Column: Component Gallery -->
+        <aside class="w-64 flex-shrink-0 bg-white border-r border-gray-200">
+            <div class="h-full flex flex-col">
+                <header class="p-4 border-b border-gray-200">
+                    <h1 class="text-lg font-bold text-gray-900">Components</h1>
+                    <p class="text-sm text-gray-500">Select a component to learn</p>
+                </header>
+                <nav id="component-gallery" class="flex-1 p-2 space-y-1 overflow-y-auto">
+                    <h3 class="px-1 pt-2 pb-0 text-xs font-semibold text-gray-500 uppercase tracking-wider">Interactive</h3>
+                    <a href="#" class="component-link" data-component="button">
+                        <i data-lucide="mouse-pointer-click" class="w-4 h-4 mr-2"></i>
+                        Button
+                    </a>
+                    <a href="#" class="component-link" data-component="dropdown">
+                        <i data-lucide="menu-square" class="w-4 h-4 mr-2"></i>
+                        Dropdown
+                    </a>
+                    <a href="#" class="component-link" data-component="tooltip">
+                        <i data-lucide="message-square-plus" class="w-4 h-4 mr-2"></i>
+                        Tooltip
+                    </a>
+                    <a href="#" class="component-link" data-component="toast">
+                        <i data-lucide="megaphone" class="w-4 h-4 mr-2"></i>
+                        Toast
+                    </a>
+
+                    <h3 class="px-1 pt-3 pb-0 text-xs font-semibold text-gray-500 uppercase tracking-wider">Layout & Navigation</h3>
+                    <a href="#" class="component-link" data-component="modal">
+                        <i data-lucide="square-arrow-out-up-right" class="w-4 h-4 mr-2"></i>
+                        Modal
+                    </a>
+                    <a href="#" class="component-link" data-component="accordion">
+                        <i data-lucide="list-collapse" class="w-4 h-4 mr-2"></i>
+                        Accordion
+                    </a>
+                    <a href="#" class="component-link" data-component="tabs">
+                        <i data-lucide="folder-tabs" class="w-4 h-4 mr-2"></i>
+                        Tabs
+                    </a>
+                    <a href="#" class="component-link" data-component="breadcrumbs">
+                        <i data-lucide="chevrons-right" class="w-4 h-4 mr-2"></i>
+                        Breadcrumbs
+                    </a>
+                    <a href="#" class="component-link" data-component="sidebar">
+                        <i data-lucide="panel-left-close" class="w-4 h-4 mr-2"></i>
+                        Sidebar
+                    </a>
+                    <a href="#" class="component-link" data-component="pagination">
+                        <i data-lucide="ellipsis" class="w-4 h-4 mr-2"></i>
+                        Pagination
+                    </a>
+                    <a href="#" class="component-link" data-component="stepper">
+                        <i data-lucide="server-cog" class="w-4 h-4 mr-2"></i>
+                        Stepper
+                    </a>
+
+                    <h3 class="px-1 pt-3 pb-0 text-xs font-semibold text-gray-500 uppercase tracking-wider">Data Display</h3>
+                    <a href="#" class="component-link" data-component="card">
+                        <i data-lucide="layout-template" class="w-4 h-4 mr-2"></i>
+                        Card
+                    </a>
+                    <a href="#" class="component-link" data-component="badge">
+                        <i data-lucide="tag" class="w-4 h-4 mr-2"></i>
+                        Badge
+                    </a>
+                     <a href="#" class="component-link" data-component="avatar">
+                        <i data-lucide="circle-user-round" class="w-4 h-4 mr-2"></i>
+                        Avatar
+                    </a>
+                    <a href="#" class="component-link" data-component="progress-bar">
+                        <i data-lucide="loader-circle" class="w-4 h-4 mr-2"></i>
+                        Progress Bar
+                    </a>
+                    <a href="#" class="component-link" data-component="stat-block">
+                        <i data-lucide="bar-chart-big" class="w-4 h-4 mr-2"></i>
+                        Stat Block
+                    </a>
+                    <a href="#" class="component-link" data-component="timeline">
+                        <i data-lucide="git-commit-vertical" class="w-4 h-4 mr-2"></i>
+                        Timeline
+                    </a>
+                    <a href="#" class="component-link" data-component="table">
+                        <i data-lucide="table" class="w-4 h-4 mr-2"></i>
+                        Table
+                    </a>
+
+                    <h3 class="px-1 pt-3 pb-0 text-xs font-semibold text-gray-500 uppercase tracking-wider">Typography</h3>
+                    <a href="#" class="component-link" data-component="headings">
+                        <i data-lucide="heading" class="w-4 h-4 mr-2"></i>
+                        Headings
+                    </a>
+                    <a href="#" class="component-link" data-component="paragraphs">
+                        <i data-lucide="pilcrow" class="w-4 h-4 mr-2"></i>
+                        Paragraphs
+                    </a>
+                    <a href="#" class="component-link" data-component="links">
+                        <i data-lucide="link" class="w-4 h-4 mr-2"></i>
+                        Links
+                    </a>
+                    <a href="#" class="component-link" data-component="lists">
+                        <i data-lucide="list" class="w-4 h-4 mr-2"></i>
+                        Lists
+                    </a>
+
+                    <h3 class="px-1 pt-3 pb-0 text-xs font-semibold text-gray-500 uppercase tracking-wider">Forms</h3>
+                    <a href="#" class="component-link" data-component="form">
+                        <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                        Form
+                    </a>
+                    <a href="#" class="component-link" data-component="label">
+                        <i data-lucide="tag" class="w-4 h-4 mr-2"></i>
+                        Label
+                    </a>
+                    <a href="#" class="component-link" data-component="input">
+                        <i data-lucide="edit-3" class="w-4 h-4 mr-2"></i>
+                        Input
+                    </a>
+                    <a href="#" class="component-link" data-component="textarea">
+                        <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                        Textarea
+                    </a>
+                    <a href="#" class="component-link" data-component="select">
+                        <i data-lucide="chevron-down-square" class="w-4 h-4 mr-2"></i>
+                        Select
+                    </a>
+                    <a href="#" class="component-link" data-component="checkbox">
+                        <i data-lucide="check-square" class="w-4 h-4 mr-2"></i>
+                        Checkbox
+                    </a>
+                    <a href="#" class="component-link" data-component="radio_group">
+                        <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                        Radio Group
+                    </a>
+                    <a href="#" class="component-link" data-component="toggle_switch">
+                        <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i>
+                        Toggle Switch
+                    </a>
+                    <a href="#" class="component-link" data-component="range_slider">
+                        <i data-lucide="sliders-horizontal" class="w-4 h-4 mr-2"></i>
+                        Range Slider
+                    </a>
+                    <a href="#" class="component-link" data-component="file_upload">
+                        <i data-lucide="upload-cloud" class="w-4 h-4 mr-2"></i>
+                        File Upload
+                    </a>
+                    <a href="#" class="component-link" data-component="date_picker">
+                        <i data-lucide="calendar-days" class="w-4 h-4 mr-2"></i>
+                        Date Picker
+                    </a>
+                    <a href="#" class="component-link" data-component="search_input">
+                        <i data-lucide="search" class="w-4 h-4 mr-2"></i>
+                        Search Input
+                    </a>
+                     <a href="#" class="component-link" data-component="multi_select_dropdown">
+                        <i data-lucide="list-checks" class="w-4 h-4 mr-2"></i>
+                        Multi-select
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Center Column: Live Preview -->
+        <main class="flex-1 flex flex-col bg-gray-100">
+             <header class="bg-white border-b border-gray-200 p-4 flex items-center justify-between">
+                <h2 class="text-lg font-semibold text-gray-900">Live Preview</h2>
+            </header>
+            <div class="flex-1 p-8 flex items-center justify-center">
+                <div id="live-preview-area" class="w-full h-full flex items-center justify-center rounded-lg bg-white shadow-sm p-4">
+                    <!-- Component will be injected here -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Column: Side Panel -->
+        <aside id="side-panel" class="w-96 flex-shrink-0 bg-white border-l border-gray-200 flex flex-col">
+            <div class="flex border-b border-gray-200">
+                <div id="side-panel-tabs" class="flex-1 flex overflow-x-auto">
+                    <button data-tab="overview" class="side-panel-tab">Overview</button>
+                    <button data-tab="html" class="side-panel-tab">HTML</button>
+                    <button data-tab="css" class="side-panel-tab">CSS</button>
+                    <button data-tab="js" class="side-panel-tab">JS</button>
+                    <button data-tab="props" class="side-panel-tab">Props</button>
+                    <button data-tab="best-practices" class="side-panel-tab">Practices</button>
+                    <button data-tab="quiz" class="side-panel-tab">Quiz</button>
+                </div>
+            </div>
+            <div id="side-panel-content" class="flex-1 p-6 overflow-y-auto prose prose-sm max-w-none">
+                <!-- Educational content will be injected here -->
+            </div>
+            <div id="export-panel" class="p-4 border-t border-gray-200 bg-gray-50">
+                <h3 class="text-md font-semibold mb-3 text-gray-800">Export Code</h3>
+                <div class="grid grid-cols-2 gap-2">
+                    <button id="copy-html-btn" class="w-full px-3 py-2 text-sm text-center font-medium bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Copy HTML</button>
+                    <button id="copy-css-btn" class="w-full px-3 py-2 text-sm text-center font-medium bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Copy CSS</button>
+                    <button id="copy-js-btn" class="w-full px-3 py-2 text-sm text-center font-medium bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Copy JS</button>
+                    <button id="copy-all-btn" class="w-full px-3 py-2 text-sm text-center font-medium bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Copy All</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

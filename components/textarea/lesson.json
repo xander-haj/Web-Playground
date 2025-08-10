@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Textarea Component", "description": "The <textarea> element provides a multi-line text input control." },
+  "html": { "title": "HTML", "code": "<textarea></textarea>" },
+  "css": { "title": "CSS", "code": "textarea { resize: vertical; }" },
+  "js": { "title": "JavaScript", "description": "No JS required for basic functionality." },
+  "best-practices": { "title": "Best Practices", "points": ["Always pair with a <label> for accessibility."] },
+  "props": [],
+  "quiz": {
+    "title": "Textarea Quiz",
+    "questions": [
+      {
+        "question": "Which element should be used for a multi-line comment field?",
+        "answers": [ "<input type=\"text\">", "<textarea>", "<p>", "<input type=\"multiline\">" ],
+        "answer": "<textarea>"
+      }
+    ]
+  }
+}

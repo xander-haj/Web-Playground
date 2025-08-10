@@ -1,0 +1,177 @@
+{
+  "button": {
+    "title": "The Semantic `<button>` Element",
+    "description": "The foundation of any button is the `<button>` tag. It is semantically correct and provides built-in accessibility features that other elements like `<div>` or `<span>` lack. Always use a `<button>` when the user is expected to perform an action on the current page.",
+    "code": "<!-- A standard button with a descriptive class -->\n<button class=\"btn\">Click Me</button>\n\n<!-- A button for submitting a form -->\n<form>\n  <button type=\"submit\" class=\"btn\">Submit</button>\n</form>\n\n<!-- A button that performs an action but doesn't submit -->\n<button type=\"button\" class=\"btn\">Open Dialog</button>"
+  },
+  "modal": {
+    "title": "The Native `<dialog>` Element",
+    "description": "Using the `<dialog>` element is the modern, semantic way to create modals. It simplifies development and improves accessibility out of the box. The browser automatically handles things like ARIA roles, focus management, and provides a default `::backdrop`. A button is used to trigger the modal's appearance.",
+    "code": "<!-- The button that will open the modal -->\n<button id=\"open-modal-btn\" class=\"btn\">Open Modal</button>\n\n<!-- The dialog element, hidden by default -->\n<dialog id=\"example-modal\" class=\"modal-container\">\n    <div class=\"modal-panel\">\n        <h3 class=\"modal-title\">Modal Title</h3>\n        <p class=\"modal-body\">\n            This is the modal content.\n        </p>\n        <div class=\"modal-footer\">\n            <button id=\"close-modal-btn\" class=\"btn-secondary\">Close</button>\n        </div>\n    </div>\n</dialog>"
+  },
+  "accordion": {
+    "title": "Structure and Accessibility",
+    "description": "The HTML for an accordion must be structured semantically for accessibility. We use headings (`<h2>`), buttons (`<button>`), and a system of ARIA (Accessible Rich Internet Applications) attributes to create a component that screen readers can understand and navigate. Key attributes include: `aria-expanded` to inform screen readers if a panel is open or closed; `aria-controls` to programmatically link a button to the panel it controls; `role=\"region\"` and `aria-labelledby` to define the content panel as a landmark region; and the `hidden` attribute to semantically hide the panel from all users.",
+    "code": "<div class=\"accordion-item\">\n  <h2 class=\"accordion-header\" id=\"header-1\">\n    <button type=\"button\" class=\"accordion-button\" aria-expanded=\"true\" aria-controls=\"panel-1\">\n      Section Title\n      <span class=\"accordion-icon\" aria-hidden=\"true\"></span>\n    </button>\n  </h2>\n  <div id=\"panel-1\" role=\"region\" aria-labelledby=\"header-1\" class=\"accordion-panel\">\n    <div class=\"accordion-content\">\n      <p>Content for this section goes here.</p>\n    </div>\n  </div>\n</div>"
+  },
+  "headings": {
+    "title": "Semantic Heading Structure",
+    "description": "HTML provides six levels of headings (h1-h6) to create a clear content hierarchy. The h1 should be used once per page as the main title, with h2-h6 used for subsections in descending order of importance. This semantic structure is crucial for accessibility and SEO.",
+    "code": "<h1>Main Page Title</h1>\n<h2>Major Section</h2>\n<h3>Subsection</h3>\n<h4>Sub-subsection</h4>\n<h5>Minor Heading</h5>\n<h6>Smallest Heading</h6>\n\n<!-- Example in context -->\n<article>\n  <h1>Web Development Best Practices</h1>\n  <h2>HTML Fundamentals</h2>\n  <h3>Semantic Elements</h3>\n  <h3>Accessibility</h3>\n  <h2>CSS Styling</h2>\n</article>"
+  },
+  "paragraphs": {
+    "title": "The Paragraph Element",
+    "description": "The `<p>` element represents a paragraph of text. It's a block-level element that automatically adds margins above and below, creating natural spacing between text blocks. Paragraphs should contain related sentences that form a cohesive thought or idea.",
+    "code": "<p>This is a standard paragraph. It contains related sentences that discuss a single topic or idea. Paragraphs are the building blocks of readable web content.</p>\n\n<p>Each paragraph should focus on one main idea. When you move to a new concept or topic, start a new paragraph. This makes your content easier to scan and understand.</p>\n\n<!-- Paragraph with inline elements -->\n<p>Paragraphs can contain <strong>strong text</strong>, <em>emphasized text</em>, and <a href=\"#\">links</a> to other resources.</p>"
+  },
+  "links": {
+    "title": "Anchor Elements and Link Types",
+    "description": "The `<a>` element creates hyperlinks to other pages, sections within the same page, email addresses, or any other URL. The `href` attribute specifies the link destination. Different types of links serve different purposes and should be marked up appropriately.",
+    "code": "<!-- Link to another page -->\n<a href=\"about.html\">About Us</a>\n\n<!-- Link to external site -->\n<a href=\"https://example.com\" target=\"_blank\" rel=\"noopener\">External Link</a>\n\n<!-- Link to section on same page -->\n<a href=\"#section1\">Go to Section 1</a>\n\n<!-- Email link -->\n<a href=\"mailto:contact@example.com\">Send Email</a>\n\n<!-- Phone link -->\n<a href=\"tel:+1234567890\">Call Us</a>\n\n<!-- Download link -->\n<a href=\"document.pdf\" download>Download PDF</a>"
+  },
+  "lists": {
+    "title": "Unordered, Ordered, and Description Lists",
+    "description": "HTML provides three types of lists: unordered lists (`<ul>`) for items without a specific order, ordered lists (`<ol>`) for sequential items, and description lists (`<dl>`) for term-description pairs. Each serves a specific semantic purpose.",
+    "code": "<!-- Unordered List -->\n<ul>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ul>\n\n<!-- Ordered List -->\n<ol>\n  <li>Step one</li>\n  <li>Step two</li>\n  <li>Step three</li>\n</ol>\n\n<!-- Description List -->\n<dl>\n  <dt>HTML</dt>\n  <dd>HyperText Markup Language</dd>\n  <dt>CSS</dt>\n  <dd>Cascading Style Sheets</dd>\n</dl>\n\n<!-- Nested Lists -->\n<ul>\n  <li>Main item\n    <ul>\n      <li>Sub item 1</li>\n      <li>Sub item 2</li>\n    </ul>\n  </li>\n</ul>"
+  },
+  "table": {
+    "title": "Semantic Table Structure",
+    "description": "HTML tables should be used exclusively for tabular data. A well-structured table includes a caption, proper headers, and semantic markup that clearly defines the relationship between data cells. The `<thead>`, `<tbody>`, and `<tfoot>` elements provide additional structure.",
+    "code": "<table>\n  <caption>Monthly Sales Data</caption>\n  <thead>\n    <tr>\n      <th scope=\"col\">Month</th>\n      <th scope=\"col\">Sales</th>\n      <th scope=\"col\">Growth</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">January</th>\n      <td>$50,000</td>\n      <td>+5%</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">February</th>\n      <td>$52,500</td>\n      <td>+5%</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <th scope=\"row\">Total</th>\n      <td>$102,500</td>\n      <td>+5%</td>\n    </tr>\n  </tfoot>\n</table>"
+  },
+  "form": {
+    "title": "Form Structure and Elements",
+    "description": "HTML forms collect user input through various form controls. A well-structured form includes proper labels, fieldsets for grouping related controls, and appropriate input types. The form element wraps all form controls and defines how data is submitted.",
+    "code": "<form action=\"/submit\" method=\"post\">\n  <fieldset>\n    <legend>Personal Information</legend>\n    \n    <label for=\"name\">Full Name:</label>\n    <input type=\"text\" id=\"name\" name=\"name\" required>\n    \n    <label for=\"email\">Email:</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required>\n    \n    <label for=\"phone\">Phone:</label>\n    <input type=\"tel\" id=\"phone\" name=\"phone\">\n  </fieldset>\n  \n  <fieldset>\n    <legend>Preferences</legend>\n    \n    <label for=\"newsletter\">\n      <input type=\"checkbox\" id=\"newsletter\" name=\"newsletter\">\n      Subscribe to newsletter\n    </label>\n  </fieldset>\n  \n  <button type=\"submit\">Submit Form</button>\n</form>"
+  },
+  "label": {
+    "title": "Label Element and Associations",
+    "description": "The `<label>` element provides an accessible name for form controls. Labels can be associated with form controls either by wrapping the control or by using the `for` attribute that matches the control's `id`. This association is crucial for accessibility and improves usability.",
+    "code": "<!-- Explicit association using 'for' attribute -->\n<label for=\"username\">Username:</label>\n<input type=\"text\" id=\"username\" name=\"username\">\n\n<!-- Implicit association by wrapping -->\n<label>\n  Password:\n  <input type=\"password\" name=\"password\">\n</label>\n\n<!-- Labels with required indicators -->\n<label for=\"email\">Email Address *</label>\n<input type=\"email\" id=\"email\" name=\"email\" required aria-describedby=\"email-help\">\n<small id=\"email-help\">We'll never share your email</small>\n\n<!-- Labels for radio buttons and checkboxes -->\n<fieldset>\n  <legend>Choose your favorite color:</legend>\n  <label><input type=\"radio\" name=\"color\" value=\"red\"> Red</label>\n  <label><input type=\"radio\" name=\"color\" value=\"blue\"> Blue</label>\n  <label><input type=\"radio\" name=\"color\" value=\"green\"> Green</label>\n</fieldset>"
+  },
+  "input": {
+    "title": "Input Types and Attributes",
+    "description": "The `<input>` element supports numerous types for different kinds of data collection. Modern input types provide built-in validation, specialized keyboards on mobile devices, and better user experience. Attributes like `required`, `pattern`, and `placeholder` enhance functionality.",
+    "code": "<!-- Text inputs -->\n<input type=\"text\" placeholder=\"Enter your name\">\n<input type=\"email\" placeholder=\"Enter your email\" required>\n<input type=\"password\" placeholder=\"Enter password\" minlength=\"8\">\n<input type=\"tel\" placeholder=\"Phone number\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\">\n<input type=\"url\" placeholder=\"Website URL\">\n\n<!-- Number and date inputs -->\n<input type=\"number\" min=\"1\" max=\"100\" step=\"1\">\n<input type=\"date\" min=\"2024-01-01\" max=\"2024-12-31\">\n<input type=\"time\">\n<input type=\"datetime-local\">\n\n<!-- Other input types -->\n<input type=\"file\" accept=\".jpg,.png,.pdf\">\n<input type=\"color\" value=\"#ff0000\">\n<input type=\"range\" min=\"0\" max=\"100\" value=\"50\">\n<input type=\"search\" placeholder=\"Search...\">\n\n<!-- Checkboxes and radio buttons -->\n<input type=\"checkbox\" id=\"agree\" name=\"agree\">\n<input type=\"radio\" id=\"option1\" name=\"choice\" value=\"1\">"
+  },
+  "textarea": {
+    "title": "Textarea for Multi-line Input",
+    "description": "The `<textarea>` element is used for multi-line text input. Unlike input elements, textarea content goes between opening and closing tags. Attributes like `rows`, `cols`, `minlength`, and `maxlength` control size and validation.",
+    "code": "<!-- Basic textarea -->\n<label for=\"message\">Your Message:</label>\n<textarea id=\"message\" name=\"message\" rows=\"4\" cols=\"50\" placeholder=\"Enter your message here...\"></textarea>\n\n<!-- Textarea with constraints -->\n<label for=\"bio\">Biography (max 500 characters):</label>\n<textarea id=\"bio\" name=\"bio\" rows=\"6\" maxlength=\"500\" required placeholder=\"Tell us about yourself...\"></textarea>\n\n<!-- Textarea with default content -->\n<label for=\"code\">Code Snippet:</label>\n<textarea id=\"code\" name=\"code\" rows=\"10\" cols=\"80\" spellcheck=\"false\">\n// Default content goes here\nfunction example() {\n  console.log('Hello, World!');\n}\n</textarea>\n\n<!-- Textarea that doesn't resize -->\n<textarea style=\"resize: none;\" rows=\"3\" placeholder=\"Fixed size textarea\"></textarea>"
+  },
+  "select": {
+    "title": "Select Element and Options",
+    "description": "The `<select>` element creates a dropdown menu of options. Options are defined using `<option>` elements, and related options can be grouped using `<optgroup>`. Select elements can allow single or multiple selections.",
+    "code": "<!-- Basic select dropdown -->\n<label for=\"country\">Country:</label>\n<select id=\"country\" name=\"country\" required>\n  <option value=\"\">Choose a country</option>\n  <option value=\"us\">United States</option>\n  <option value=\"ca\">Canada</option>\n  <option value=\"uk\">United Kingdom</option>\n  <option value=\"au\">Australia</option>\n</select>\n\n<!-- Select with option groups -->\n<label for=\"food\">Favorite Food:</label>\n<select id=\"food\" name=\"food\">\n  <optgroup label=\"Fruits\">\n    <option value=\"apple\">Apple</option>\n    <option value=\"banana\">Banana</option>\n    <option value=\"orange\">Orange</option>\n  </optgroup>\n  <optgroup label=\"Vegetables\">\n    <option value=\"carrot\">Carrot</option>\n    <option value=\"broccoli\">Broccoli</option>\n    <option value=\"spinach\">Spinach</option>\n  </optgroup>\n</select>\n\n<!-- Multiple selection -->\n<label for=\"skills\">Skills (hold Ctrl to select multiple):</label>\n<select id=\"skills\" name=\"skills\" multiple size=\"4\">\n  <option value=\"html\">HTML</option>\n  <option value=\"css\">CSS</option>\n  <option value=\"js\">JavaScript</option>\n  <option value=\"react\">React</option>\n</select>"
+  },
+  "tabs": {
+    "title": "Tab Interface Structure",
+    "description": "A semantic tab interface uses a combination of elements with ARIA attributes to create an accessible tabbed interface. The tab list contains tab buttons, and each tab is associated with a corresponding panel. Proper ARIA labeling ensures screen reader compatibility.",
+    "code": "<div class=\"tabs-container\">\n  <!-- Tab List -->\n  <div role=\"tablist\" aria-label=\"Content Sections\">\n    <button role=\"tab\" aria-selected=\"true\" aria-controls=\"panel-1\" id=\"tab-1\" tabindex=\"0\">\n      Tab 1\n    </button>\n    <button role=\"tab\" aria-selected=\"false\" aria-controls=\"panel-2\" id=\"tab-2\" tabindex=\"-1\">\n      Tab 2\n    </button>\n    <button role=\"tab\" aria-selected=\"false\" aria-controls=\"panel-3\" id=\"tab-3\" tabindex=\"-1\">\n      Tab 3\n    </button>\n  </div>\n  \n  <!-- Tab Panels -->\n  <div role=\"tabpanel\" id=\"panel-1\" aria-labelledby=\"tab-1\">\n    <h3>Panel 1 Content</h3>\n    <p>This is the content for the first tab.</p>\n  </div>\n  \n  <div role=\"tabpanel\" id=\"panel-2\" aria-labelledby=\"tab-2\" hidden>\n    <h3>Panel 2 Content</h3>\n    <p>This is the content for the second tab.</p>\n  </div>\n  \n  <div role=\"tabpanel\" id=\"panel-3\" aria-labelledby=\"tab-3\" hidden>\n    <h3>Panel 3 Content</h3>\n    <p>This is the content for the third tab.</p>\n  </div>\n</div>"
+  },
+  "tooltip": {
+    "title": "Tooltip Markup and Accessibility",
+    "description": "Tooltips require careful consideration for accessibility. They can be implemented using the `title` attribute for simple text, or with custom HTML using ARIA attributes for more complex tooltips. The tooltip should be associated with its trigger element.",
+    "code": "<!-- Simple tooltip using title attribute -->\n<button title=\"This button saves your current work\">Save</button>\n\n<!-- Custom tooltip with ARIA -->\n<button aria-describedby=\"save-tooltip\" onmouseenter=\"showTooltip()\" onmouseleave=\"hideTooltip()\">\n  Save\n</button>\n<div id=\"save-tooltip\" role=\"tooltip\" class=\"tooltip\" hidden>\n  This button saves your current work to the server\n</div>\n\n<!-- Tooltip with complex content -->\n<span class=\"tooltip-trigger\" aria-describedby=\"help-tooltip\">\n  Help\n  <i aria-hidden=\"true\">?</i>\n</span>\n<div id=\"help-tooltip\" role=\"tooltip\" class=\"tooltip\">\n  <strong>Getting Started</strong>\n  <p>Click the button below to begin the tutorial.</p>\n  <button>Start Tutorial</button>\n</div>\n\n<!-- Form field with tooltip -->\n<label for=\"password\">Password:</label>\n<input type=\"password\" id=\"password\" aria-describedby=\"password-help\">\n<div id=\"password-help\" role=\"tooltip\" class=\"tooltip\">\n  Password must be at least 8 characters long and contain both letters and numbers.\n</div>"
+  },
+  "dropdown": {
+    "title": "Dropdown Menu Structure",
+    "description": "A dropdown menu consists of a trigger element (usually a button) and a menu panel that appears when activated. Proper ARIA attributes ensure the relationship between trigger and menu is clear to assistive technologies. The menu should contain focusable items like links or buttons.",
+    "code": "<!-- Basic dropdown structure -->\n<div class=\"dropdown\">\n  <button aria-haspopup=\"true\" aria-expanded=\"false\" aria-controls=\"dropdown-menu\" id=\"dropdown-button\">\n    Menu\n    <span aria-hidden=\"true\">▼</span>\n  </button>\n  \n  <ul id=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"dropdown-button\" hidden>\n    <li role=\"menuitem\"><a href=\"#profile\">Profile</a></li>\n    <li role=\"menuitem\"><a href=\"#settings\">Settings</a></li>\n    <li role=\"separator\"></li>\n    <li role=\"menuitem\"><a href=\"#logout\">Logout</a></li>\n  </ul>\n</div>\n\n<!-- Dropdown with button actions -->\n<div class=\"dropdown\">\n  <button aria-haspopup=\"true\" aria-expanded=\"false\" aria-controls=\"actions-menu\">\n    Actions\n  </button>\n  \n  <div id=\"actions-menu\" role=\"menu\" class=\"dropdown-menu\" hidden>\n    <button role=\"menuitem\" onclick=\"editItem()\">Edit</button>\n    <button role=\"menuitem\" onclick=\"duplicateItem()\">Duplicate</button>\n    <button role=\"menuitem\" onclick=\"deleteItem()\" class=\"danger\">Delete</button>\n  </div>\n</div>\n\n<!-- Nested dropdown -->\n<div class=\"dropdown\">\n  <button aria-haspopup=\"true\" aria-expanded=\"false\">File</button>\n  <ul role=\"menu\" hidden>\n    <li role=\"menuitem\"><button>New</button></li>\n    <li role=\"menuitem\" aria-haspopup=\"true\">\n      <button>Recent Files</button>\n      <ul role=\"menu\">\n        <li role=\"menuitem\"><button>document1.txt</button></li>\n        <li role=\"menuitem\"><button>document2.txt</button></li>\n      </ul>\n    </li>\n    <li role=\"menuitem\"><button>Save</button></li>\n  </ul>\n</div>"
+  },
+  "checkbox": {
+    "title": "Accessible Checkbox Structure",
+    "description": "A custom checkbox starts with a semantic `<input type=\"checkbox\">` and its associated `<label>`. The input is visually hidden, and the label acts as the custom-styled checkbox. This ensures the component is fully accessible and keyboard navigable.",
+    "code": "<div class=\"custom-checkbox-container\">\n  <input type=\"checkbox\" id=\"custom-checkbox-1\" class=\"custom-checkbox\" checked>\n  <label for=\"custom-checkbox-1\">Accept terms and conditions</label>\n</div>"
+  },
+  "radio_group": {
+    "title": "Semantic Radio Group",
+    "description": "Radio buttons must be grouped semantically using a `<fieldset>` and described by a `<legend>`. Each `<input type=\"radio\">` must share the same `name` attribute to ensure they are mutually exclusive. Each input should also have a corresponding `<label>`.",
+    "code": "<fieldset>\n  <legend>Select an option:</legend>\n  <div class=\"radio-option\">\n    <input id=\"radio-1\" name=\"options\" type=\"radio\" checked>\n    <label for=\"radio-1\">Option 1</label>\n  </div>\n  <div class=\"radio-option\">\n    <input id=\"radio-2\" name=\"options\" type=\"radio\">\n    <label for=\"radio-2\">Option 2</label>\n  </div>\n</fieldset>"
+  },
+  "toggle_switch": {
+    "title": "Toggle Switch from a Button",
+    "description": "A toggle switch is an accessible button with a `role=\"switch\"` and an `aria-checked` attribute to indicate its state. A `<span>` inside is used for the visual thumb. This approach provides a great user experience while being fully accessible.",
+    "code": "<button id=\"toggle-switch-btn\" type=\"button\" role=\"switch\" aria-checked=\"false\">\n  <span class=\"sr-only\">Enable Notifications</span>\n  <span aria-hidden=\"true\" class=\"toggle-thumb\"></span>\n</button>"
+  },
+  "range_slider": {
+    "title": "Range Input with Output",
+    "description": "A standard `<input type=\"range\">` is the foundation. For accessibility and usability, it's best to pair it with a `<label>` and an `<output>` element to display the current value, which is dynamically updated with JavaScript.",
+    "code": "<div>\n  <label for=\"volume\">Volume</label>\n  <input type=\"range\" id=\"volume-slider\" min=\"0\" max=\"100\" value=\"50\">\n  <output for=\"volume-slider\" id=\"volume-output\">50</output>\n</div>"
+  },
+  "file_upload": {
+    "title": "Drag-and-Drop File Input",
+    "description": "The core is a visually hidden `<input type=\"file\">`. A `<label>` is styled to be the main drop zone. A separate `<div>` is used as a container to display file previews.",
+    "code": "<div id=\"drop-zone\">\n  <input type=\"file\" id=\"file-input\" multiple hidden>\n  <label for=\"file-input\">Drag & drop files here, or click to select</label>\n</div>\n<div id=\"preview-container\"></div>"
+  },
+  "date_picker": {
+    "title": "Native Date and Time Inputs",
+    "description": "Leveraging native browser support is the easiest and most accessible way to handle dates and times. Use `<input type=\"date\">`, `<input type=\"time\">`, and `<input type=\"datetime-local\">` for their respective purposes.",
+    "code": "<div>\n  <label for=\"appointment-date\">Date:</label>\n  <input type=\"date\" id=\"appointment-date\">\n</div>\n<div>\n  <label for=\"appointment-time\">Time:</label>\n  <input type=\"time\" id=\"appointment-time\">\n</div>"
+  },
+  "search_input": {
+    "title": "Search with Autocomplete",
+    "description": "The structure includes a container `div`, an `<input type=\"search\">`, and a `<ul>` for the suggestions list. The list is populated and shown by JavaScript based on user input. ARIA attributes are crucial for accessibility.",
+    "code": "<div class=\"search-container\">\n  <input type=\"search\" id=\"search-box\" placeholder=\"Search...\" \n         role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"false\">\n  <ul id=\"suggestions-list\" role=\"listbox\" hidden></ul>\n</div>"
+  },
+  "multi_select_dropdown": {
+    "title": "Custom Multi-Select Structure",
+    "description": "A custom multi-select consists of a wrapper, a button to toggle the dropdown, and a panel containing a list of options (often checkboxes with labels). A separate area may be used to display 'pills' of the selected items.",
+    "code": "<div class=\"multi-select-container\">\n  <button id=\"multi-select-toggle\" aria-haspopup=\"listbox\" aria-expanded=\"false\">Select Fruits</button>\n  <div id=\"multi-select-panel\" role=\"listbox\" hidden>\n    <!-- Options (checkboxes) will be generated here -->\n  </div>\n  <div id=\"selected-items-display\"></div>\n</div>"
+  },
+  "card": {
+    "title": "Card Structure",
+    "description": "A card is typically a `<div>` container. Inside, you can have distinct sections like an image (`<img>`), a body (`<div>`) for text content, and a footer (`<div>`) for actions or meta information. Using semantic headings and paragraphs within the card is important for accessibility.",
+    "code": "<div class=\\\"card\\\">\n  <img class=\\\"card-image\\\" src=\\\"https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80\\\" alt=\\\"Mountain landscape\\\">\n  <div class=\\\"card-body\\\">\n    <h3 class=\\\"card-title\\\">Card Title</h3>\n    <p class=\\\"card-text\\\">This is the main content of the card. It provides a brief description or summary.</p>\n  </div>\n  <div class=\\\"card-footer\\\">\n    <button class=\\\"btn-primary-sm\\\">Read More</button>\n  </div>\n</div>"
+  },
+  "badge": {
+    "title": "Badge and Pill Structure",
+    "description": "Badges are typically `<span>` elements, as they are used for inline labeling. Various classes are used to control color and shape (e.g., `.badge-pill` for a fully rounded shape). For badges with indicators, a nested element is often used for the dot.",
+    "code": "<!-- Standard Badge -->\n<span class=\\\"badge badge-blue\\\">Active</span>\n\n<!-- Badge with a Dot -->\n<span class=\\\"badge badge-green\\\">\n  <span class=\\\"badge-dot\\\"></span>\n  Completed\n</span>\n\n<!-- Pill-shaped Badge -->\n<span class=\\\"badge badge-pill badge-yellow\\\">On Hold</span>"
+  },
+  "avatar": {
+    "title": "Avatar Structure",
+    "description": "An avatar is a container `<div>` that wraps an `<img>`. This allows for easy positioning of additional elements like a status indicator `<span>`. Classes are used to control the size (`.avatar-sm`, `.avatar-md`) and shape (`.avatar-circle`, `.avatar-rounded`).",
+    "code": "<!-- Circular Avatar with Online Status -->\n<div class=\\\"avatar avatar-lg avatar-circle\\\">\n  <img class=\\\"avatar-img\\\" src=\\\"https://i.pravatar.cc/150?u=a042581f4e29026704d\\\" alt=\\\"User avatar\\\">\n  <span class=\\\"avatar-status status-online\\\"></span>\n</div>\n\n<!-- Rounded Square Avatar -->\n<div class=\\\"avatar avatar-md avatar-rounded\\\">\n  <img class=\\\"avatar-img\\\" src=\\\"https://i.pravatar.cc/150?u=a042581f4e29026705d\\\" alt=\\\"User avatar\\\">\n</div>"
+  },
+  "stat_block": {
+    "title": "Stat Block Structure",
+    "description": "A simple `<div>` acts as the container. Inside, semantic elements like `<p>` or `<span>` are used for the label, the primary metric, and any secondary information like a percentage change. A containing `div` for the change allows for easy color coding based on positive or negative values.",
+    "code": "<div class=\\\"stat-block\\\">\n  <p class=\\\"stat-label\\\">Total Revenue</p>\n  <p class=\\\"stat-metric\\\">$45,231.89</p>\n  <div class=\\\"stat-change stat-change-positive\\\">\n    +20.1% from last month\n  </div>\n</div>"
+  },
+  "timeline": {
+    "title": "Timeline Structure",
+    "description": "A timeline is semantically an ordered list (`<ol>`) as it represents a sequence of events. Each `<li>` is a timeline item. Inside each item, you can have elements for the time, a title, and a description. The visual line and dots are created with CSS pseudo-elements, keeping the HTML clean.",
+    "code": "<ol class=\\\"timeline\\\">\n  <li class=\\\"timeline-item\\\">\n    <time class=\\\"timeline-time\\\">Feb 2024</time>\n    <h4 class=\\\"timeline-title\\\">New Feature Launch</h4>\n    <p class=\\\"timeline-description\\\">Launched the new dashboard with updated analytics.</p>\n  </li>\n  <li class=\\\"timeline-item\\\">\n    <time class=\\\"timeline-time\\\">Jan 2024</time>\n    <h4 class=\\\"timeline-title\\\">User Feedback Collection</h4>\n    <p class=\\\"timeline-description\\\">Collected and analyzed feedback from over 1,000 users.</p>\n  </li>\n</ol>"
+  },
+  "toast": {
+    "title": "Toast Notification Structure",
+    "description": "A container element with `position: fixed` is needed to hold all active toasts. Each toast is a `div` with an appropriate `role` (like 'alert' or 'status') for accessibility. Inside, you can include an icon, the message, and an optional close button.",
+    "code": "<!-- Container for all toasts (place once in your app) -->\n<div id=\\\"toast-container\\\" class=\\\"toast-container\\\"></div>\n\n<!-- Buttons to trigger example toasts -->\n<div class=\\\"flex gap-4\\\">\n    <button id=\\\"show-success-toast\\\" class=\\\"btn-secondary\\\">Show Success Toast</button>\n    <button id=\\\"show-error-toast\\\" class=\\\"btn-secondary\\\">Show Error Toast</button>\n</div>\n\n<!-- Note: The toasts themselves are dynamically generated by JavaScript. -->"
+  },
+  "breadcrumbs": {
+    "title": "Breadcrumbs Structure",
+    "description": "Breadcrumbs are implemented as an ordered list (`<ol>`) inside a `<nav>` element with an `aria-label` of 'breadcrumb'. Each `<li>` represents a page in the hierarchy. The last item is marked with `aria-current=\"page\"` to indicate it's the current page and is typically not a link.",
+    "code": "<nav aria-label=\\\"breadcrumb\\\" class=\\\"breadcrumb-nav\\\">\n  <ol>\n    <li class=\\\"breadcrumb-item\\\">\n      <a href=\\\"#\\\" class=\\\"breadcrumb-link\\\">Home</a>\n    </li>\n    <li class=\\\"breadcrumb-item\\\">\n      <a href=\\\"#\\\" class=\\\"breadcrumb-link\\\">Projects</a>\n    </li>\n    <li class=\\\"breadcrumb-item\\\">\n      <span class=\\\"breadcrumb-current\\\" aria-current=\\\"page\\\">My Project</span>\n    </li>\n  </ol>\n</nav>"
+  },
+  "sidebar": {
+    "title": "Sidebar Navigation Structure",
+    "description": "A sidebar is typically a `<nav>` or `<aside>` element positioned off-screen. It contains a list of navigation links. A button outside the sidebar is used to toggle its visibility. An overlay `<div>` is also included to cover the main content when the sidebar is open, especially on mobile.",
+    "code": "<!-- Button to open the sidebar -->\n<button id=\\\"open-sidebar-btn\\\">\n  Open Sidebar\n</button>\n\n<!-- The sidebar element -->\n<aside id=\\\"app-sidebar\\\" class=\\\"sidebar\\\">\n  <div class=\\\"p-4 border-b\\\">\n    <h2 class=\\\"text-xl font-bold\\\">App Menu</h2>\n    <button id=\\\"close-sidebar-btn\\\" class=\\\"absolute top-4 right-4\\\">Close</button>\n  </div>\n  <nav class=\\\"p-4\\\">\n    <a href=\\\"#\\\" class=\\\"sidebar-nav-link active\\\">Dashboard</a>\n    <a href=\\\"#\\\" class=\\\"sidebar-nav-link\\\">Team</a>\n    <a href=\\\"#\\\" class=\\\"sidebar-nav-link\\\">Projects</a>\n  </nav>\n</aside>\n\n<!-- The overlay -->\n<div id=\\\"sidebar-overlay\\\" class=\\\"sidebar-overlay\\\"></div>"
+  },
+  "pagination": {
+    "title": "Pagination Structure",
+    "description": "Pagination is structured as a `<nav>` element containing a list of links. The links can be page numbers or directional arrows (Previous/Next). The current page is marked with `aria-current=\"page\"` and styled differently. Disabled links have an `aria-disabled=\"true\"` attribute.",
+    "code": "<nav aria-label=\\\"Page navigation\\\" class=\\\"pagination-nav\\\">\n  <a href=\\\"#\\\" class=\\\"pagination-item disabled\\\" aria-disabled=\\\"true\\\">Previous</a>\n  <a href=\\\"#\\\" class=\\\"pagination-item\\\">1</a>\n  <a href=\\\"#\\\" class=\\\"pagination-item current\\\" aria-current=\\\"page\\\">2</a>\n  <a href=\\\"#\\\" class=\\\"pagination-item\\\">3</a>\n  <span class=\\\"pagination-item disabled pagination-ellipsis\\\">...</span>\n  <a href=\\\"#\\\" class=\\\"pagination-item\\\">10</a>\n  <a href=\\\"#\\\" class=\\\"pagination-item\\\">Next</a>\n</nav>"
+  },
+  "stepper": {
+    "title": "Stepper / Wizard Structure",
+    "description": "A stepper is an ordered list (`<ol>`) where each `<li>` is a step. ARIA attributes like `aria-current=\"step\"` are used to indicate the active step. The content for each step is in separate panels, and control buttons (Next/Previous) are used to navigate between them.",
+    "code": "<div class=\\\"stepper-container\\\">\n  <!-- Step Indicators -->\n  <ol class=\\\"stepper\\\">\n    <li class=\\\"step completed\\\" id=\\\"step-indicator-1\\\">Step 1</li>\n    <li class=\\\"step active\\\" id=\\\"step-indicator-2\\\" aria-current=\\\"step\\\">Step 2</li>\n    <li class=\\\"step\\\" id=\\\"step-indicator-3\\\">Step 3</li>\n  </ol>\n\n  <!-- Step Content Panels -->\n  <div class=\\\"stepper-content\\\">\n    <div id=\\\"step-panel-1\\\" hidden>Content for Step 1</div>\n    <div id=\\\"step-panel-2\\\">Content for Step 2</div>\n    <div id=\\\"step-panel-3\\\" hidden>Content for Step 3</div>\n  </div>\n\n  <!-- Navigation Buttons -->\n  <div class=\\\"stepper-nav\\\">\n    <button id=\\\"stepper-prev-btn\\\">Previous</button>\n    <button id=\\\"stepper-next-btn\\\">Next</button>\n  </div>\n</div>"
+  },
+  "progress_bar": {
+    "title": "Progress Bar (Accessible Determinate/Indeterminate)",
+    "description": "A semantic progress bar with ARIA attributes for screen readers. The container uses `role=\"progressbar\"` along with `aria-valuemin`, `aria-valuemax`, and `aria-valuenow`. Nested `.progress-fill` visually reflects the current value with a smooth transition. For indeterminate state, omit `aria-valuenow` and apply a CSS animation to `.progress-fill`.",
+    "code": "<!-- Determinate progress bar -->\n<div class=\"progress-container\" role=\"progressbar\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-valuenow=\"25\">\n  <div class=\"progress-fill\" style=\"width:25%\"></div>\n</div>\n\n<!-- Indeterminate progress bar -->\n<div class=\"progress-container progress-indeterminate\" role=\"progressbar\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n  <div class=\"progress-fill\"></div>\n</div>\n"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Table Component", "description": "Tables are used to display tabular data." },
+  "html": { "title": "HTML", "code": "<table>...</table>" },
+  "css": { "title": "CSS", "code": "table { border-collapse: collapse; }" },
+  "js": { "title": "JavaScript", "description": "JS can be used for sorting or filtering table data." },
+  "best-practices": { "title": "Best Practices", "points": ["Use <thead>, <tbody>, and <th> for proper table structure."] },
+  "props": [],
+  "quiz": {
+    "title": "Table Quiz",
+    "questions": [
+      {
+        "question": "Which tag defines a table header cell?",
+        "answers": [ "<td>", "<th>", "<tr>", "<header>" ],
+        "answer": "<th>"
+      }
+    ]
+  }
+}

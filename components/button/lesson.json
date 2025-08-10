@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Button Component", "description": "Buttons are a fundamental interactive element in any web application. They allow users to trigger actions." },
+  "html": { "title": "HTML", "code": "<button>Example</button>" },
+  "css": { "title": "CSS", "code": "/* ... */" },
+  "js": { "title": "JavaScript", "description": "No JS required for basic button." },
+  "best-practices": { "title": "Best Practices", "points": ["Use <button> for actions, <a> for navigation."] },
+  "props": [],
+  "quiz": {
+    "title": "Button Quiz",
+    "questions": [
+      {
+        "question": "Which element is semantically correct for an action like 'Submit' or 'Save'?",
+        "answers": [ "<div>", "<span>", "<button>", "<a>" ],
+        "answer": "<button>"
+      }
+    ]
+  }
+}

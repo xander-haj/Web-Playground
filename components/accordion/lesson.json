@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Accordion Component", "description": "Accordions allow users to toggle the visibility of content sections, keeping the interface clean." },
+  "html": { "title": "HTML", "code": "<!-- Accordion HTML structure -->" },
+  "css": { "title": "CSS", "code": "/* Accordion styles */" },
+  "js": { "title": "JavaScript", "description": "JS is needed to handle the open/close state." },
+  "best-practices": { "title": "Best Practices", "points": ["Use appropriate ARIA attributes for accessibility."] },
+  "props": [],
+  "quiz": {
+    "title": "Accordion Quiz",
+    "questions": [
+      {
+        "question": "What is the main purpose of an accordion component?",
+        "answers": [ "To display data in a table", "To show and hide collapsible content panels", "To navigate to other pages", "To submit user data" ],
+        "answer": "To show and hide collapsible content panels"
+      }
+    ]
+  }
+}

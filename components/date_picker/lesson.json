@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Date Picker Component",
+    "description": "Date pickers let users select a calendar date (and optionally a time). Native inputs are preferred for accessibility and mobile support."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<input type=\\\"date\\\" aria-label=\\\"Select date\\\">"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript opens/closes a calendar popover, syncs input values, and validates date ranges when a custom picker is used."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Prefer native inputs when possible for platform accessibility and locale behavior.",
+      "If building custom, ensure proper roles (grid, gridcell) and keyboard navigation.",
+      "Respect locale-specific date formats and first day of week.",
+      "Constrain invalid ranges (min/max) and indicate errors clearly.",
+      "Support manual typing and parsing when feasible."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Date Picker Quiz",
+    "questions": [
+      {
+        "question": "Which input type provides a native calendar UI in many browsers?",
+        "answers": [
+          "text",
+          "date",
+          "number",
+          "datetime"
+        ],
+        "answer": "date"
+      }
+    ]
+  }
+}

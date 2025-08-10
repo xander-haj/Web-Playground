@@ -1,0 +1,41 @@
+<div class="accordion-container w-full max-w-lg mx-auto font-sans">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="accordion-header-1">
+      <button type="button" class="accordion-button" aria-expanded="true" aria-controls="accordion-panel-1">
+        What is a semantic HTML?
+        <span class="accordion-icon" aria-hidden="true"></span>
+      </button>
+    </h2>
+    <div id="accordion-panel-1" role="region" aria-labelledby="accordion-header-1" class="accordion-panel">
+      <div class="accordion-content">
+        <p>Semantic HTML refers to the use of HTML tags that convey meaning and structure about the content they contain, rather than just its appearance. For example, using <code>&lt;h1&gt;</code> for a main heading, <code>&lt;p&gt;</code> for a paragraph, and <code>&lt;nav&gt;</code> for navigation links helps browsers, search engines, and assistive technologies understand the structure of your page.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="accordion-header-2">
+      <button type="button" class="accordion-button" aria-expanded="false" aria-controls="accordion-panel-2">
+        Why are ARIA attributes important?
+        <span class="accordion-icon" aria-hidden="true"></span>
+      </button>
+    </h2>
+    <div id="accordion-panel-2" role="region" aria-labelledby="accordion-header-2" class="accordion-panel" hidden>
+       <div class="accordion-content">
+        <p>ARIA (Accessible Rich Internet Applications) attributes help make web content and applications more accessible to people with disabilities. They provide extra information to assistive technologies like screen readers. For an accordion, code>aria-expanded</code> tells a user if a panel is open or closed, and <code>aria-controls</code> links the button to the panel it manages.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="accordion-header-3">
+      <button type="button" class="accordion-button" aria-expanded="false" aria-controls="accordion-panel-3">
+        How does the panel animation work?
+        <span class="accordion-icon" aria-hidden="true"></span>
+      </button>
+    </h2>
+    <div id="accordion-panel-3" role="region" aria-labelledby="accordion-header-3" class="accordion-panel" hidden>
+       <div class="accordion-content">
+        <p>The smooth opening and closing animation is achieved using CSS Grid. We transition the <code>grid-template-rows</code> property from <code>0fr</code> (zero fractions, effectively zero height) to <code>1fr</code> (one fraction, taking up all available space). This allows for a smooth height transition without needing to specify a fixed height, which is difficult when content is dynamic.</p>
+      </div>
+    </div>
+  </div>
+</div>

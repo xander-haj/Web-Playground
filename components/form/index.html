@@ -1,0 +1,29 @@
+<div class="w-full max-w-lg">
+    <form action="/submit" method="post" class="space-y-6">
+      <fieldset class="space-y-4">
+        <legend class="text-lg font-medium text-gray-900">Personal Information</legend>
+        
+        <div class="form-group">
+          <label for="name" class="block text-sm font-medium text-gray-700">Full Name:</label>
+          <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+          <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend class="text-lg font-medium text-gray-900">Preferences</legend>
+        <div class="mt-4">
+          <label for="newsletter" class="flex items-center">
+            <input type="checkbox" id="newsletter" name="newsletter" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+            <span class="ml-2 text-sm text-gray-600">Subscribe to newsletter</span>
+          </label>
+        </div>
+      </fieldset>
+      
+      <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit Form</button>
+    </form>
+</div>

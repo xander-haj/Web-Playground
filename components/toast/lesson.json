@@ -1,0 +1,45 @@
+{
+    "title": "Toast Notifications",
+    "description": "Toasts are non-intrusive notifications that appear briefly to provide feedback or information to the user, then disappear automatically.",
+    "keywords": ["toast", "notification", "message", "feedback", "alert"],
+    "overview": {
+        "title": "Overview of Toast Notifications",
+        "description": "Toasts are used to show brief, auto-expiring messages for actions like 'Message Sent' or 'File Saved'. They shouldn't interrupt the user's workflow and are typically displayed at the top or bottom of the screen."
+    },
+    "html": {
+        "title": "HTML Structure",
+        "description": "The HTML requires a trigger element (like a button) and a container element, usually with a fixed position, where the toast messages will be dynamically added and removed."
+    },
+    "css": {
+        "title": "CSS Styling",
+        "description": "CSS is used to style the toast's appearance and position. Animations or transitions are crucial for a smooth entry and exit (e.g., fade in and fade out), which are controlled by adding and removing classes."
+    },
+    "js": {
+        "title": "JavaScript Logic",
+        "description": "The JavaScript creates a new toast element on a trigger event, appends it to the container, and uses a `setTimeout` to remove the toast from the DOM after a few seconds."
+    },
+    "quiz": {
+        "title": "Toast Quiz",
+        "description": "Test your knowledge on toast notifications.",
+        "questions": [
+            {
+                "question": "What is a key feature of a toast notification?",
+                "answers": [
+                    "It requires the user to click 'OK' to close it",
+                    "It is a non-intrusive message that disappears automatically",
+                    "It always contains a form"
+                ],
+                "answer": "It is a non-intrusive message that disappears automatically"
+            },
+            {
+                "question": "Which JavaScript function is commonly used to make a toast disappear after a delay?",
+                "answers": [
+                    "setInterval()",
+                    "requestAnimationFrame()",
+                    "setTimeout()"
+                ],
+                "answer": "setTimeout()"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Select Component", "description": "The <select> element provides a dropdown list of options." },
+  "html": { "title": "HTML", "code": "<select><option>Option 1</option></select>" },
+  "css": { "title": "CSS", "code": "select { padding: 5px; }" },
+  "js": { "title": "JavaScript", "description": "JS can be used to handle changes in the selected option." },
+  "best-practices": { "title": "Best Practices", "points": ["Group related options with <optgroup>."] },
+  "props": [],
+  "quiz": {
+    "title": "Select Quiz",
+    "questions": [
+      {
+        "question": "What tag defines an option in a dropdown list?",
+        "answers": [ "<item>", "<opt>", "<choice>", "<option>" ],
+        "answer": "<option>"
+      }
+    ]
+  }
+}

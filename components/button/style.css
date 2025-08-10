@@ -1,0 +1,29 @@
+:root {
+  --btn-bg-color: #4f46e5;
+  --btn-text-color: #ffffff;
+  --btn-border-radius: 0.375rem;
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border-radius: var(--btn-border-radius);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 200ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: #4338ca; 
+}
+
+.btn:focus-visible {
+  outline: 4px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,18 @@
+a {
+  color: #4f46e5;
+  text-decoration: underline;
+  text-decoration-color: #a5b4fc;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+a:hover {
+  color: #4338ca;
+  text-decoration-color: #4338ca;
+}
+
+a:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+  border-radius: 2px;
+}

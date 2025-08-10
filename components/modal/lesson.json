@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Modal Component", "description": "Modals are dialog boxes that appear on top of the main content." },
+  "html": { "title": "HTML", "code": "<!-- Modal HTML structure -->" },
+  "css": { "title": "CSS", "code": "/* Modal styles */" },
+  "js": { "title": "JavaScript", "description": "JS is required to control the visibility of the modal." },
+  "best-practices": { "title": "Best Practices", "points": ["Modals should be easy to dismiss (e.g., with an 'X' button or Escape key)."] },
+  "props": [],
+  "quiz": {
+    "title": "Modal Quiz",
+    "questions": [
+      {
+        "question": "What is a key accessibility feature for a modal dialog?",
+        "answers": [ "It should always be fullscreen", "It should trap focus within the modal", "It cannot be closed", "It should automatically close after 5 seconds" ],
+        "answer": "It should trap focus within the modal"
+      }
+    ]
+  }
+}

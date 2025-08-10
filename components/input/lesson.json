@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Input Component", "description": "The <input> element is a versatile control for accepting user data." },
+  "html": { "title": "HTML", "code": "<input type=\"text\">" },
+  "css": { "title": "CSS", "code": "input { border: 1px solid #ccc; }" },
+  "js": { "title": "JavaScript", "description": "Can be used for validation." },
+  "best-practices": { "title": "Best Practices", "points": ["Use the correct `type` attribute for the data you expect (e.g., email, number)."] },
+  "props": [],
+  "quiz": {
+    "title": "Input Quiz",
+    "questions": [
+      {
+        "question": "To create a field for password entry, which `type` attribute should be used?",
+        "answers": [ "text", "hidden", "password", "secure" ],
+        "answer": "password"
+      }
+    ]
+  }
+}

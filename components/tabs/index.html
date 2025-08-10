@@ -1,0 +1,69 @@
+<div class="space-y-12">
+
+  <div>
+    <h4 class="text-base font-semibold mb-4 text-gray-700">Horizontal Tabs</h4>
+    <div class="tabs-container w-full max-w-lg">
+      <div role="tablist" aria-label="Content Sections" class="flex border-b border-gray-200">
+        <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0" class="px-4 py-2 font-medium text-sm text-indigo-600 border-b-2 border-indigo-500 focus:outline-none">
+          Tab 1
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1" class="px-4 py-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300 border-b-2 border-transparent focus:outline-none">
+          Tab 2
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1" class="px-4 py-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300 border-b-2 border-transparent focus:outline-none">
+          Tab 3
+        </button>
+      </div>
+      
+      <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" class="p-4 bg-white">
+        <h3 class="text-lg font-semibold">Panel 1 Content</h3>
+        <p class="mt-2 text-gray-600">This is the content for the first tab.</p>
+      </div>
+      
+      <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden class="p-4 bg-white">
+        <h3 class="text-lg font-semibold">Panel 2 Content</h3>
+        <p class="mt-2 text-gray-600">This is the content for the second tab.</p>
+      </div>
+      
+      <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden class="p-4 bg-white">
+        <h3 class="text-lg font-semibold">Panel 3 Content</h3>
+        <p class="mt-2 text-gray-600">This is the content for the third tab.</p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h4 class="text-base font-semibold mb-4 text-gray-700">Vertical Tabs with Icons</h4>
+    <div class="tabs-container tabs-vertical w-full max-w-lg flex bg-white rounded-lg shadow-sm border">
+      <div role="tablist" aria-label="Settings" class="flex-shrink-0 flex flex-col border-r border-gray-200 w-36">
+        <button role="tab" aria-selected="true" aria-controls="v-panel-1" id="v-tab-1" tabindex="0" class="vertical-tab text-indigo-600 bg-indigo-50">
+          <i data-lucide="user" class="w-4 h-4 mr-2 flex-shrink-0"></i>
+          <span class="truncate">Profile</span>
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="v-panel-2" id="v-tab-2" tabindex="-1" class="vertical-tab text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+          <i data-lucide="shield" class="w-4 h-4 mr-2 flex-shrink-0"></i>
+           <span class="truncate">Account</span>
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="v-panel-3" id="v-tab-3" tabindex="-1" class="vertical-tab text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+          <i data-lucide="bell" class="w-4 h-4 mr-2 flex-shrink-0"></i>
+           <span class="truncate">Notifications</span>
+        </button>
+      </div>
+      
+      <div class="flex-grow">
+        <div role="tabpanel" id="v-panel-1" aria-labelledby="v-tab-1" class="p-6">
+          <h3 class="text-lg font-semibold">Profile Content</h3>
+          <p class="mt-2 text-gray-600">This is where profile settings would go. You can edit your name, photo, and bio.</p>
+        </div>
+        <div role="tabpanel" id="v-panel-2" aria-labelledby="v-tab-2" hidden class="p-6">
+          <h3 class="text-lg font-semibold">Account Content</h3>
+          <p class="mt-2 text-gray-600">Manage your password, two-factor authentication, and signed-in devices.</p>
+        </div>
+        <div role="tabpanel" id="v-panel-3" aria-labelledby="v-tab-3" hidden class="p-6">
+          <h3 class="text-lg font-semibold">Notifications Content</h3>
+          <p class="mt-2 text-gray-600">Control how you receive notifications for comments, mentions, and updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

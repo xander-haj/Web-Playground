@@ -1,0 +1,18 @@
+{
+  "overview": { "title": "Tabs Component", "description": "Tabs are a navigation element used to switch between different views within the same context." },
+  "html": { "title": "HTML", "code": "<!-- Tabs HTML structure -->" },
+  "css": { "title": "CSS", "code": "/* Tabs styles */" },
+  "js": { "title": "JavaScript", "description": "JS is required to handle switching between tab panels." },
+  "best-practices": { "title": "Best Practices", "points": ["Use ARIA roles like `tablist`, `tab`, and `tabpanel` for accessibility."] },
+  "props": [],
+  "quiz": {
+    "title": "Tabs Quiz",
+    "questions": [
+      {
+        "question": "What is the primary benefit of using a tabs component?",
+        "answers": [ "To play videos", "To organize content and save screen space", "To submit a form", "To create a multi-step wizard" ],
+        "answer": "To organize content and save screen space"
+      }
+    ]
+  }
+}

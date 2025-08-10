@@ -1,0 +1,16 @@
+.toggle-switch {
+  background-color: #d1d5db;
+  transition: background-color 200ms ease-in-out;
+}
+
+.toggle-switch[aria-checked="true"] {
+  background-color: #4f46e5;
+}
+
+.toggle-thumb {
+  transform: translateX(-0.75rem);
+}
+
+.toggle-switch[aria-checked="true"] .toggle-thumb {
+  transform: translateX(0.75rem);
+}

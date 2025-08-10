@@ -1,0 +1,45 @@
+{
+    "title": "Progress Bar",
+    "description": "Progress bars are used to give users feedback on the status of a running process, like a file upload or a multi-step form.",
+    "keywords": ["progress", "loader", "bar", "determinate", "indeterminate"],
+    "overview": {
+        "title": "Overview of Progress Bars",
+        "description": "Progress bars visualize the advancement of an operation. A 'determinate' bar shows how much of the task is complete (e.g., 60%), while an 'indeterminate' bar shows that an operation is ongoing without a known completion time."
+    },
+    "html": {
+        "title": "HTML Structure",
+        "description": "The structure consists of a container element and an inner element whose width is adjusted to show progress. For indeterminate bars, an animating element is used inside an overflowing container."
+    },
+    "css": {
+        "title": "CSS Styling",
+        "description": "Styling is minimal, focusing on the container and the progress indicator. The key part for an indeterminate bar is the CSS animation that creates a continuous motion effect, providing visual feedback of activity."
+    },
+    "js": {
+        "title": "JavaScript Logic",
+        "description": "JavaScript is used to dynamically update the width of a determinate progress bar based on the task's progress. For indeterminate bars, JS is typically not needed for the animation itself, which is handled by CSS."
+    },
+    "quiz": {
+        "title": "Progress Bar Quiz",
+        "description": "Test your knowledge on progress bars.",
+        "questions": [
+            {
+                "question": "When would you use an indeterminate progress bar?",
+                "answers": [
+                    "When the duration of the task is known",
+                    "When the duration of the task is unknown",
+                    "Only for file downloads"
+                ],
+                "answer": "When the duration of the task is unknown"
+            },
+            {
+                "question": "What CSS feature is essential for animating an indeterminate progress bar?",
+                "answers": [
+                    "Flexbox",
+                    "@keyframes animations",
+                    "CSS Grid"
+                ],
+                "answer": "@keyframes animations"
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "File Upload Component",
+    "description": "File upload inputs allow users to select one or more files from their device; drag-and-drop can improve UX."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<input type=\\\"file\\\" id=\\\"resume\\\" multiple aria-label=\\\"Upload resume\\\">"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript listens for change and drag/drop events to enumerate selected files and show previews."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Provide clear constraints (accepted formats, max size) and validate on the server as well.",
+      "Make the entire label clickable and provide keyboard access.",
+      "Use aria-live regions for upload progress updates.",
+      "Never rely solely on client-side validation for security.",
+      "Show file names and sizes to set expectations before submission."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "File Upload Quiz",
+    "questions": [
+      {
+        "question": "Where must file type and size validation ultimately happen for security?",
+        "answers": [
+          "Only on the client",
+          "Only on the server",
+          "On both client and server",
+          "Validation is unnecessary"
+        ],
+        "answer": "Only on the server"
+      }
+    ]
+  }
+}

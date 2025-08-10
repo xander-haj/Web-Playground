@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Toggle Switch Component",
+    "description": "A toggle switch represents a binary on/off state. It is typically implemented with a checkbox and styled as a switch."
+  },
+  "html": {
+    "title": "HTML",
+    "code": "<button type=\\\"button\\\" role=\\\"switch\\\" aria-checked=\\\"false\\\" aria-label=\\\"Enable notifications\\\"></button>"
+  },
+  "css": {
+    "title": "CSS",
+    "code": "/* See component style.css for the full reference styles. */"
+  },
+  "js": {
+    "title": "JavaScript",
+    "description": "JavaScript updates aria-checked or the underlying checkbox state and triggers change handlers."
+  },
+  "best-practices": {
+    "title": "Best Practices",
+    "points": [
+      "Ensure the switch is reachable and operable via keyboard (Space/Enter).",
+      "Announce state with aria-checked when using role=\\\"switch\\\".",
+      "Provide visible focus and sufficient hit area.",
+      "Do not use a switch for destructive one-time actions; use a button instead.",
+      "Include an adjacent label to communicate the setting being toggled."
+    ]
+  },
+  "props": [],
+  "quiz": {
+    "title": "Toggle Switch Quiz",
+    "questions": [
+      {
+        "question": "When building a custom switch using a button element, which ARIA attribute communicates its current state?",
+        "answers": [
+          "aria-pressed",
+          "aria-expanded",
+          "aria-checked",
+          "aria-selected"
+        ],
+        "answer": "aria-checked"
+      }
+    ]
+  }
+}

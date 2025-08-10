@@ -1,0 +1,1273 @@
+{
+  "button": {
+    "title": "Knowledge Check: Buttons",
+    "description": "Test your understanding of HTML buttons and their proper implementation.",
+    "questions": [
+      {
+        "question": "When should you use an <a> tag instead of a <button>?",
+        "answers": [
+          "When submitting a form.",
+          "When triggering a JavaScript function.",
+          "When navigating the user to a new page or URL.",
+          "When you want rounded corners."
+        ],
+        "answer": "When navigating the user to a new page or URL."
+      },
+      {
+        "question": "Which CSS pseudo-class is essential for keyboard accessibility?",
+        "answers": [
+          ":hover",
+          ":active",
+          ":visited",
+          ":focus-visible"
+        ],
+        "answer": ":focus-visible"
+      },
+      {
+        "question": "What is the correct way to make a button that doesn't submit a form?",
+        "answers": [
+          "<button>Click me</button>",
+          "<button type=\"button\">Click me</button>",
+          "<button type=\"submit\">Click me</button>",
+          "<div class=\"button\">Click me</div>"
+        ],
+        "answer": "<button type=\"button\">Click me</button>"
+      }
+    ]
+  },
+  "modal": {
+    "title": "Knowledge Check: Modals",
+    "description": "Test your knowledge of modal dialogs and the HTML dialog element.",
+    "questions": [
+      {
+        "question": "Which new CSS pseudo-element is specifically used to style the overlay behind a <dialog> element?",
+        "answers": [
+          "::before",
+          "::overlay",
+          "::backdrop",
+          "::modal"
+        ],
+        "answer": "::backdrop"
+      },
+      {
+        "question": "Which JavaScript method should you call on a <dialog> element to open it and trap user focus?",
+        "answers": [
+          ".open()",
+          ".show()",
+          ".showModal()",
+          ".activate()"
+        ],
+        "answer": ".showModal()"
+      },
+      {
+        "question": "What happens when a user presses the Escape key in a properly implemented modal?",
+        "answers": [
+          "Nothing happens by default",
+          "The modal automatically closes",
+          "The page refreshes",
+          "An error occurs"
+        ],
+        "answer": "The modal automatically closes"
+      }
+    ]
+  },
+  "accordion": {
+    "title": "Knowledge Check: Accordions",
+    "description": "Test your understanding of accordion components and their accessibility features.",
+    "questions": [
+      {
+        "question": "What is the primary purpose of the `aria-controls` attribute on an accordion button?",
+        "answers": [
+          "To change the button's color.",
+          "To link the button to the content panel it controls for assistive technologies.",
+          "To hide the button from screen readers.",
+          "To define the animation speed of the panel."
+        ],
+        "answer": "To link the button to the content panel it controls for assistive technologies."
+      },
+      {
+        "question": "Which CSS property is transitioned in the modern accordion example to create a smooth open/close animation?",
+        "answers": [
+          "height",
+          "opacity",
+          "grid-template-rows",
+          "max-height"
+        ],
+        "answer": "grid-template-rows"
+      },
+      {
+        "question": "What should the `aria-expanded` attribute be set to when an accordion panel is closed?",
+        "answers": [
+          "true",
+          "false",
+          "hidden",
+          "collapsed"
+        ],
+        "answer": "false"
+      }
+    ]
+  },
+  "headings": {
+    "title": "Knowledge Check: Headings",
+    "description": "Test your knowledge of HTML heading structure and hierarchy.",
+    "questions": [
+      {
+        "question": "How many h1 elements should typically appear on a single web page?",
+        "answers": [
+          "As many as needed",
+          "Exactly one",
+          "No more than three",
+          "At least two"
+        ],
+        "answer": "Exactly one"
+      },
+      {
+        "question": "What is the correct heading hierarchy after an h2?",
+        "answers": [
+          "h1",
+          "h3",
+          "h4",
+          "Any heading level"
+        ],
+        "answer": "h3"
+      },
+      {
+        "question": "Why is proper heading structure important for accessibility?",
+        "answers": [
+          "It makes text look better",
+          "It helps screen readers navigate content",
+          "It improves page loading speed",
+          "It's required by HTML5"
+        ],
+        "answer": "It helps screen readers navigate content"
+      }
+    ]
+  },
+  "paragraphs": {
+    "title": "Knowledge Check: Paragraphs",
+    "description": "Test your understanding of paragraph elements and text structure.",
+    "questions": [
+      {
+        "question": "What is the semantic purpose of the <p> element?",
+        "answers": [
+          "To create line breaks",
+          "To represent a paragraph of text",
+          "To style text with padding",
+          "To create visual spacing"
+        ],
+        "answer": "To represent a paragraph of text"
+      },
+      {
+        "question": "Which CSS property is most important for paragraph readability?",
+        "answers": [
+          "font-weight",
+          "text-decoration",
+          "line-height",
+          "text-transform"
+        ],
+        "answer": "line-height"
+      },
+      {
+        "question": "How should you create space between paragraphs?",
+        "answers": [
+          "Use <br> tags",
+          "Use CSS margin",
+          "Add empty <p> elements",
+          "Use &nbsp; entities"
+        ],
+        "answer": "Use CSS margin"
+      }
+    ]
+  },
+  "links": {
+    "title": "Knowledge Check: Links",
+    "description": "Test your knowledge of anchor elements and link implementation.",
+    "questions": [
+      {
+        "question": "When should you add `target=\"_blank\"` to a link?",
+        "answers": [
+          "For all external links",
+          "When linking to another page on your site",
+          "Only when the user expects it to open in a new tab",
+          "Never, it's bad for accessibility"
+        ],
+        "answer": "Only when the user expects it to open in a new tab"
+      },
+      {
+        "question": "What should you add alongside `target=\"_blank\"` for security?",
+        "answers": [
+          "rel=\"nofollow\"",
+          "rel=\"noopener noreferrer\"",
+          "rel=\"external\"",
+          "rel=\"security\""
+        ],
+        "answer": "rel=\"noopener noreferrer\""
+      },
+      {
+        "question": "How do you create a link to an email address?",
+        "answers": [
+          "href=\"email:user@example.com\"",
+          "href=\"mailto:user@example.com\"",
+          "href=\"mail:user@example.com\"",
+          "href=\"send:user@example.com\""
+        ],
+        "answer": "href=\"mailto:user@example.com\""
+      }
+    ]
+  },
+  "lists": {
+    "title": "Knowledge Check: Lists",
+    "description": "Test your understanding of HTML list elements and their usage.",
+    "questions": [
+      {
+        "question": "When should you use an ordered list (<ol>) instead of an unordered list (<ul>)?",
+        "answers": [
+          "When the items need to be styled with numbers",
+          "When the order of items is meaningful",
+          "When you have more than 5 items",
+          "When the list contains links"
+        ],
+        "answer": "When the order of items is meaningful"
+      },
+      {
+        "question": "What is the correct structure for a description list?",
+        "answers": [
+          "<dl><li>Term</li><li>Description</li></dl>",
+          "<dl><dt>Term</dt><dd>Description</dd></dl>",
+          "<dl><th>Term</th><td>Description</td></dl>",
+          "<dl><dt>Term</dt><dt>Description</dt></dl>"
+        ],
+        "answer": "<dl><dt>Term</dt><dd>Description</dd></dl>"
+      },
+      {
+        "question": "How do you create a nested list?",
+        "answers": [
+          "Put a <ul> or <ol> inside an <li> element",
+          "Use the nested attribute",
+          "Create a separate list with class=\"nested\"",
+          "Use <indent> tags"
+        ],
+        "answer": "Put a <ul> or <ol> inside an <li> element"
+      }
+    ]
+  },
+  "table": {
+    "title": "Knowledge Check: Tables",
+    "description": "Test your knowledge of HTML tables and their proper structure.",
+    "questions": [
+      {
+        "question": "What is the purpose of the <th> element?",
+        "answers": [
+          "To make text bold",
+          "To create table headers",
+          "To style table cells",
+          "To add table borders"
+        ],
+        "answer": "To create table headers"
+      },
+      {
+        "question": "Which attribute should you use on <th> elements to improve accessibility?",
+        "answers": [
+          "role=\"header\"",
+          "scope=\"col\" or scope=\"row\"",
+          "header=\"true\"",
+          "accessibility=\"header\""
+        ],
+        "answer": "scope=\"col\" or scope=\"row\""
+      },
+      {
+        "question": "When should you use HTML tables?",
+        "answers": [
+          "For page layout",
+          "For displaying tabular data",
+          "For creating columns",
+          "For styling content"
+        ],
+        "answer": "For displaying tabular data"
+      }
+    ]
+  },
+  "form": {
+    "title": "Knowledge Check: Forms",
+    "description": "Test your understanding of HTML forms and form elements.",
+    "questions": [
+      {
+        "question": "What is the purpose of the <fieldset> element?",
+        "answers": [
+          "To style form elements",
+          "To group related form controls",
+          "To validate form data",
+          "To submit form data"
+        ],
+        "answer": "To group related form controls"
+      },
+      {
+        "question": "Which HTTP method should you use for forms that modify data on the server?",
+        "answers": [
+          "GET",
+          "POST",
+          "PUT",
+          "DELETE"
+        ],
+        "answer": "POST"
+      },
+      {
+        "question": "What happens when you click a submit button inside a form?",
+        "answers": [
+          "The page refreshes",
+          "JavaScript runs automatically",
+          "The form data is sent to the server",
+          "Nothing happens"
+        ],
+        "answer": "The form data is sent to the server"
+      }
+    ]
+  },
+  "label": {
+    "title": "Knowledge Check: Labels",
+    "description": "Test your knowledge of form labels and accessibility.",
+    "questions": [
+      {
+        "question": "How do you properly associate a label with a form control?",
+        "answers": [
+          "Place them next to each other",
+          "Use the `for` attribute matching the control's `id`",
+          "Use the same name attribute",
+          "Wrap them in a div"
+        ],
+        "answer": "Use the `for` attribute matching the control's `id`"
+      },
+      {
+        "question": "What happens when you click on a properly associated label?",
+        "answers": [
+          "Nothing happens",
+          "The form submits",
+          "The associated form control receives focus",
+          "An error occurs"
+        ],
+        "answer": "The associated form control receives focus"
+      },
+      {
+        "question": "Why are labels important for accessibility?",
+        "answers": [
+          "They make forms look better",
+          "They provide context for screen readers",
+          "They are required by HTML5",
+          "They prevent form submission errors"
+        ],
+        "answer": "They provide context for screen readers"
+      }
+    ]
+  },
+  "input": {
+    "title": "Knowledge Check: Input Elements",
+    "description": "Test your understanding of HTML input elements and their types.",
+    "questions": [
+      {
+        "question": "What does the `required` attribute do on an input element?",
+        "answers": [
+          "Makes the input visible",
+          "Prevents form submission if the field is empty",
+          "Adds a red border to the input",
+          "Makes the input read-only"
+        ],
+        "answer": "Prevents form submission if the field is empty"
+      },
+      {
+        "question": "Which input type automatically validates email addresses?",
+        "answers": [
+          "type=\"text\"",
+          "type=\"email\"",
+          "type=\"validation\"",
+          "type=\"mail\""
+        ],
+        "answer": "type=\"email\""
+      },
+      {
+        "question": "What is the purpose of the `placeholder` attribute?",
+        "answers": [
+          "To set the default value",
+          "To provide a hint about expected input",
+          "To validate the input",
+          "To make the input required"
+        ],
+        "answer": "To provide a hint about expected input"
+      }
+    ]
+  },
+  "textarea": {
+    "title": "Knowledge Check: Textarea",
+    "description": "Test your knowledge of textarea elements for multi-line input.",
+    "questions": [
+      {
+        "question": "How do you set default content in a textarea?",
+        "answers": [
+          "Use the value attribute",
+          "Place text between the opening and closing tags",
+          "Use the placeholder attribute",
+          "Use the default attribute"
+        ],
+        "answer": "Place text between the opening and closing tags"
+      },
+      {
+        "question": "Which attributes control the size of a textarea?",
+        "answers": [
+          "width and height",
+          "rows and cols",
+          "size and length",
+          "x and y"
+        ],
+        "answer": "rows and cols"
+      },
+      {
+        "question": "How can you prevent users from resizing a textarea?",
+        "answers": [
+          "Add the fixed attribute",
+          "Use CSS resize: none",
+          "Set readonly=\"true\"",
+          "Use the noresize attribute"
+        ],
+        "answer": "Use CSS resize: none"
+      }
+    ]
+  },
+  "select": {
+    "title": "Knowledge Check: Select Elements",
+    "description": "Test your understanding of select dropdown elements.",
+    "questions": [
+      {
+        "question": "How do you group related options in a select element?",
+        "answers": [
+          "Use <group> elements",
+          "Use <optgroup> elements",
+          "Use <section> elements",
+          "Use <category> elements"
+        ],
+        "answer": "Use <optgroup> elements"
+      },
+      {
+        "question": "How do you make a select element allow multiple selections?",
+        "answers": [
+          "Add the multiple attribute",
+          "Add the multi attribute",
+          "Use type=\"multiple\"",
+          "Use select=\"multiple\""
+        ],
+        "answer": "Add the multiple attribute"
+      },
+      {
+        "question": "Which option appears as the default selection in a select element?",
+        "answers": [
+          "The first option",
+          "The option with selected=\"true\"",
+          "The option with the selected attribute",
+          "The last option"
+        ],
+        "answer": "The option with the selected attribute"
+      }
+    ]
+  },
+  "tabs": {
+    "title": "Knowledge Check: Tab Interfaces",
+    "description": "Test your knowledge of accessible tab implementations.",
+    "questions": [
+      {
+        "question": "Which ARIA role should be used for the container holding tab buttons?",
+        "answers": [
+          "role=\"tabs\"",
+          "role=\"tablist\"",
+          "role=\"navigation\"",
+          "role=\"menu\""
+        ],
+        "answer": "role=\"tablist\""
+      },
+      {
+        "question": "How should keyboard navigation work in a tab interface?",
+        "answers": [
+          "Only Tab key moves between tabs",
+          "Arrow keys move between tabs, Enter/Space activates",
+          "Only mouse clicks work",
+          "Tab key activates tabs"
+        ],
+        "answer": "Arrow keys move between tabs, Enter/Space activates"
+      },
+      {
+        "question": "What attribute indicates which tab panel is currently visible?",
+        "answers": [
+          "aria-selected=\"true\" on the tab",
+          "active=\"true\" on the panel",
+          "visible=\"true\" on the panel",
+          "current=\"true\" on the tab"
+        ],
+        "answer": "aria-selected=\"true\" on the tab"
+      }
+    ]
+  },
+  "tooltip": {
+    "title": "Knowledge Check: Tooltips",
+    "description": "Test your understanding of tooltip implementation and accessibility.",
+    "questions": [
+      {
+        "question": "Which ARIA attribute should be used to associate a tooltip with its trigger element?",
+        "answers": [
+          "aria-tooltip",
+          "aria-describedby",
+          "aria-label",
+          "aria-controls"
+        ],
+        "answer": "aria-describedby"
+      },
+      {
+        "question": "When should tooltips be shown?",
+        "answers": [
+          "Only on mouse hover",
+          "Only on keyboard focus",
+          "On both hover and focus",
+          "Only when clicked"
+        ],
+        "answer": "On both hover and focus"
+      },
+      {
+        "question": "What is the main accessibility concern with tooltips?",
+        "answers": [
+          "They are always visible",
+          "They may not be accessible to keyboard users",
+          "They are too small to read",
+          "They cause page layout issues"
+        ],
+        "answer": "They may not be accessible to keyboard users"
+      }
+    ]
+  },
+  "dropdown": {
+    "title": "Knowledge Check: Dropdown Menus",
+    "description": "Test your knowledge of dropdown menu implementation and accessibility.",
+    "questions": [
+      {
+        "question": "Which ARIA attribute indicates that a button will open a dropdown menu?",
+        "answers": [
+          "aria-dropdown=\"true\"",
+          "aria-haspopup=\"true\"",
+          "aria-menu=\"true\"",
+          "aria-opens=\"menu\""
+        ],
+        "answer": "aria-haspopup=\"true\""
+      },
+      {
+        "question": "How should keyboard navigation work in a dropdown menu?",
+        "answers": [
+          "Tab key moves through menu items",
+          "Arrow keys move through menu items",
+          "Only mouse clicks work",
+          "Enter key moves through items"
+        ],
+        "answer": "Arrow keys move through menu items"
+      },
+      {
+        "question": "When should a dropdown menu close automatically?",
+        "answers": [
+          "Never automatically",
+          "After 5 seconds",
+          "When clicking outside or pressing Escape",
+          "Only when explicitly closed"
+        ],
+        "answer": "When clicking outside or pressing Escape"
+      }
+    ]
+  },
+  "checkbox": {
+    "title": "Knowledge Check: Checkboxes",
+    "description": "Test your knowledge of checkbox implementation and behavior.",
+    "questions": [
+      {
+        "question": "What is the main advantage of using a real <input type=\"checkbox\"> as the foundation for custom checkboxes?",
+        "answers": [
+          "It looks better by default",
+          "It provides built-in accessibility and keyboard support",
+          "It's easier to style with CSS",
+          "It loads faster"
+        ],
+        "answer": "It provides built-in accessibility and keyboard support"
+      },
+      {
+        "question": "How should you hide the native checkbox appearance while maintaining functionality?",
+        "answers": [
+          "Use display: none",
+          "Use visibility: hidden",
+          "Use appearance: none",
+          "Use opacity: 0"
+        ],
+        "answer": "Use appearance: none"
+      },
+      {
+        "question": "What CSS property is commonly animated to create a smooth checkbox transition?",
+        "answers": [
+          "opacity",
+          "transform",
+          "background-color",
+          "border-color"
+        ],
+        "answer": "transform"
+      }
+    ]
+  },
+  "radio_group": {
+    "title": "Knowledge Check: Radio Groups",
+    "description": "Test your knowledge of radio button groups and their proper implementation.",
+    "questions": [
+      {
+        "question": "What attribute must be the same for all radio buttons in a group?",
+        "answers": [
+          "id",
+          "name",
+          "value",
+          "class"
+        ],
+        "answer": "name"
+      },
+      {
+        "question": "Which element should be used to semantically group radio buttons?",
+        "answers": [
+          "<div>",
+          "<section>",
+          "<fieldset>",
+          "<group>"
+        ],
+        "answer": "<fieldset>"
+      },
+      {
+        "question": "What happens when a user selects a radio button in a group?",
+        "answers": [
+          "Nothing happens to other buttons",
+          "All other buttons in the group are automatically deselected",
+          "All buttons in the group become selected",
+          "The form is submitted"
+        ],
+        "answer": "All other buttons in the group are automatically deselected"
+      }
+    ]
+  },
+  "toggle_switch": {
+    "title": "Knowledge Check: Toggle Switches",
+    "description": "Test your knowledge of toggle switch implementation and accessibility.",
+    "questions": [
+      {
+        "question": "What ARIA role should be used for a toggle switch button?",
+        "answers": [
+          "role=\"button\"",
+          "role=\"toggle\"",
+          "role=\"switch\"",
+          "role=\"checkbox\""
+        ],
+        "answer": "role=\"switch\""
+      },
+      {
+        "question": "Which ARIA attribute indicates the current state of a toggle switch?",
+        "answers": [
+          "aria-pressed",
+          "aria-selected",
+          "aria-checked",
+          "aria-active"
+        ],
+        "answer": "aria-checked"
+      },
+      {
+        "question": "What CSS property is typically used to move the thumb in a toggle switch animation?",
+        "answers": [
+          "margin",
+          "position",
+          "transform",
+          "left"
+        ],
+        "answer": "transform"
+      }
+    ]
+  },
+  "range_slider": {
+    "title": "Knowledge Check: Range Sliders",
+    "description": "Test your knowledge of range input implementation and styling.",
+    "questions": [
+      {
+        "question": "Which HTML input type creates a range slider?",
+        "answers": [
+          "type=\"slider\"",
+          "type=\"range\"",
+          "type=\"number\"",
+          "type=\"scale\""
+        ],
+        "answer": "type=\"range\""
+      },
+      {
+        "question": "What attributes control the minimum and maximum values of a range slider?",
+        "answers": [
+          "from and to",
+          "start and end",
+          "min and max",
+          "low and high"
+        ],
+        "answer": "min and max"
+      },
+      {
+        "question": "Which pseudo-element is used to style the slider thumb in WebKit browsers?",
+        "answers": [
+          "::-webkit-slider-handle",
+          "::-webkit-slider-thumb",
+          "::-webkit-range-thumb",
+          "::-webkit-slider-button"
+        ],
+        "answer": "::-webkit-slider-thumb"
+      }
+    ]
+  },
+  "file_upload": {
+    "title": "Knowledge Check: File Upload",
+    "description": "Test your knowledge of file upload implementation with drag-and-drop.",
+    "questions": [
+      {
+        "question": "Which event is fired when files are dropped onto a drop zone?",
+        "answers": [
+          "dragdrop",
+          "filedrop",
+          "drop",
+          "dragend"
+        ],
+        "answer": "drop"
+      },
+      {
+        "question": "What must you do to prevent the browser's default behavior when files are dragged over an element?",
+        "answers": [
+          "Return false from the event handler",
+          "Call event.preventDefault()",
+          "Set draggable to false",
+          "Use stopPropagation()"
+        ],
+        "answer": "Call event.preventDefault()"
+      },
+      {
+        "question": "How do you access the files from a drop event?",
+        "answers": [
+          "event.files",
+          "event.dataTransfer.files",
+          "event.target.files",
+          "event.dragFiles"
+        ],
+        "answer": "event.dataTransfer.files"
+      }
+    ]
+  },
+  "date_picker": {
+    "title": "Knowledge Check: Date Pickers",
+    "description": "Test your knowledge of native date picker implementation.",
+    "questions": [
+      {
+        "question": "Which input type creates a native date picker?",
+        "answers": [
+          "type=\"calendar\"",
+          "type=\"date\"",
+          "type=\"datepicker\"",
+          "type=\"datetime\""
+        ],
+        "answer": "type=\"date\""
+      },
+      {
+        "question": "What attribute sets the earliest selectable date?",
+        "answers": [
+          "earliest",
+          "from",
+          "min",
+          "start"
+        ],
+        "answer": "min"
+      },
+      {
+        "question": "Which input type allows selection of both date and time?",
+        "answers": [
+          "type=\"datetime\"",
+          "type=\"datetime-local\"",
+          "type=\"date-time\"",
+          "type=\"timestamp\""
+        ],
+        "answer": "type=\"datetime-local\""
+      }
+    ]
+  },
+  "search_input": {
+    "title": "Knowledge Check: Search Input",
+    "description": "Test your knowledge of search input with autocomplete functionality.",
+    "questions": [
+      {
+        "question": "Which input type is semantically correct for search functionality?",
+        "answers": [
+          "type=\"text\"",
+          "type=\"search\"",
+          "type=\"find\"",
+          "type=\"query\""
+        ],
+        "answer": "type=\"search\""
+      },
+      {
+        "question": "Which ARIA attribute should be used to indicate that an input has autocomplete suggestions?",
+        "answers": [
+          "aria-autocomplete",
+          "aria-suggests",
+          "aria-completion",
+          "aria-dropdown"
+        ],
+        "answer": "aria-autocomplete"
+      },
+      {
+        "question": "What keyboard event should trigger the display of autocomplete suggestions?",
+        "answers": [
+          "keydown",
+          "keypress",
+          "input",
+          "change"
+        ],
+        "answer": "input"
+      }
+    ]
+  },
+  "multi_select_dropdown": {
+    "title": "Knowledge Check: Multi-select Dropdown",
+    "description": "Test your knowledge of custom multi-select dropdown implementation.",
+    "questions": [
+      {
+        "question": "What ARIA role should be used for the dropdown panel containing selectable options?",
+        "answers": [
+          "role=\"menu\"",
+          "role=\"listbox\"",
+          "role=\"options\"",
+          "role=\"selection\""
+        ],
+        "answer": "role=\"listbox\""
+      },
+      {
+        "question": "How should multiple selected items typically be displayed to the user?",
+        "answers": [
+          "As a comma-separated list",
+          "As individual removable 'pills' or tags",
+          "As a count number only",
+          "As a bulleted list"
+        ],
+        "answer": "As individual removable 'pills' or tags"
+      },
+      {
+        "question": "What JavaScript data structure is most efficient for tracking selected items in a multi-select?",
+        "answers": [
+          "Array",
+          "Object",
+          "Set",
+          "Map"
+        ],
+        "answer": "Set"
+      }
+    ]
+  },
+  "card": {
+    "title": "Knowledge Check: Cards",
+    "questions": [
+      {
+        "question": "What is the primary purpose of a card component?",
+        "answers": [
+          "To display a single image",
+          "To group related content and actions into a single unit",
+          "To navigate to another page",
+          "To show a list of items"
+        ],
+        "answer": "To group related content and actions into a single unit"
+      },
+      {
+        "question": "Which statement about Card is correct?",
+        "choices": [
+          "Card should be accessible and semantic.",
+          "Card must always be an image without text.",
+          "Card can never be used with ARIA.",
+          "Card should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Card should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Card is correct?",
+        "choices": [
+          "Card should be accessible and semantic.",
+          "Card must always be an image without text.",
+          "Card can never be used with ARIA.",
+          "Card should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Card should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "badge": {
+    "title": "Knowledge Check: Badges",
+    "questions": [
+      {
+        "question": "Which HTML element is most semantically appropriate for a badge?",
+        "answers": [
+          "<div>",
+          "<li>",
+          "<span>",
+          "<badge>"
+        ],
+        "answer": "<span>"
+      },
+      {
+        "question": "Which statement about Badge is correct?",
+        "choices": [
+          "Badge should be accessible and semantic.",
+          "Badge must always be an image without text.",
+          "Badge can never be used with ARIA.",
+          "Badge should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Badge should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Badge is correct?",
+        "choices": [
+          "Badge should be accessible and semantic.",
+          "Badge must always be an image without text.",
+          "Badge can never be used with ARIA.",
+          "Badge should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Badge should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "avatar": {
+    "title": "Knowledge Check: Avatars",
+    "questions": [
+      {
+        "question": "Which CSS property is essential for creating a circular avatar?",
+        "answers": [
+          "border: 50%",
+          "outline: circle",
+          "border-radius: 9999px",
+          "shape: circle"
+        ],
+        "answer": "border-radius: 9999px"
+      },
+      {
+        "question": "Which statement about Avatar is correct?",
+        "choices": [
+          "Avatar should be accessible and semantic.",
+          "Avatar must always be an image without text.",
+          "Avatar can never be used with ARIA.",
+          "Avatar should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Avatar should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Avatar is correct?",
+        "choices": [
+          "Avatar should be accessible and semantic.",
+          "Avatar must always be an image without text.",
+          "Avatar can never be used with ARIA.",
+          "Avatar should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Avatar should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "progress_bar": {
+    "title": "Knowledge Check: Progress Bars",
+    "questions": [
+      {
+        "question": "Which ARIA attribute is used to communicate the current value of a progress bar to screen readers?",
+        "answers": [
+          "aria-value",
+          "aria-valuenow",
+          "aria-progress",
+          "aria-current"
+        ],
+        "answer": "aria-valuenow"
+      },
+      {
+        "question": "Which statement about Progress Bar is correct?",
+        "choices": [
+          "Progress Bar should be accessible and semantic.",
+          "Progress Bar must always be an image without text.",
+          "Progress Bar can never be used with ARIA.",
+          "Progress Bar should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Progress Bar should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Progress Bar is correct?",
+        "choices": [
+          "Progress Bar should be accessible and semantic.",
+          "Progress Bar must always be an image without text.",
+          "Progress Bar can never be used with ARIA.",
+          "Progress Bar should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Progress Bar should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "stat_block": {
+    "title": "Knowledge Check: Stat Blocks",
+    "questions": [
+      {
+        "question": "What is the main goal of a stat block's visual design?",
+        "answers": [
+          "To be as colorful as possible",
+          "To create a strong visual hierarchy emphasizing the key metric",
+          "To fit as much information as possible",
+          "To be interactive"
+        ],
+        "answer": "To create a strong visual hierarchy emphasizing the key metric"
+      },
+      {
+        "question": "Which statement about Stat Block is correct?",
+        "choices": [
+          "Stat Block should be accessible and semantic.",
+          "Stat Block must always be an image without text.",
+          "Stat Block can never be used with ARIA.",
+          "Stat Block should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Stat Block should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Stat Block is correct?",
+        "choices": [
+          "Stat Block should be accessible and semantic.",
+          "Stat Block must always be an image without text.",
+          "Stat Block can never be used with ARIA.",
+          "Stat Block should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Stat Block should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Knowledge Check: Timelines",
+    "questions": [
+      {
+        "question": "Which HTML list element is most semantically correct for a timeline?",
+        "answers": [
+          "<ul>",
+          "<dl>",
+          "<ol>",
+          "<div>"
+        ],
+        "answer": "<ol>"
+      },
+      {
+        "question": "Which statement about Timeline is correct?",
+        "choices": [
+          "Timeline should be accessible and semantic.",
+          "Timeline must always be an image without text.",
+          "Timeline can never be used with ARIA.",
+          "Timeline should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Timeline should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Timeline is correct?",
+        "choices": [
+          "Timeline should be accessible and semantic.",
+          "Timeline must always be an image without text.",
+          "Timeline can never be used with ARIA.",
+          "Timeline should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Timeline should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "toast": {
+    "title": "Knowledge Check: Toasts",
+    "questions": [
+      {
+        "question": "What is a key characteristic of a toast notification?",
+        "answers": [
+          "It requires the user to dismiss it",
+          "It is non-modal and disappears automatically",
+          "It covers the entire screen",
+          "It contains a lot of detailed information"
+        ],
+        "answer": "It is non-modal and disappears automatically"
+      },
+      {
+        "question": "Which statement about Toast is correct?",
+        "choices": [
+          "Toast should be accessible and semantic.",
+          "Toast must always be an image without text.",
+          "Toast can never be used with ARIA.",
+          "Toast should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Toast should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Toast is correct?",
+        "choices": [
+          "Toast should be accessible and semantic.",
+          "Toast must always be an image without text.",
+          "Toast can never be used with ARIA.",
+          "Toast should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Toast should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "breadcrumbs": {
+    "title": "Knowledge Check: Breadcrumbs",
+    "questions": [
+      {
+        "question": "What ARIA attribute should be applied to the last item in a breadcrumb trail?",
+        "answers": [
+          "aria-last=\"true\"",
+          "aria-current=\"page\"",
+          "aria-selected=\"true\"",
+          "aria-active=\"true\""
+        ],
+        "answer": "aria-current=\"page\""
+      },
+      {
+        "question": "Which statement about Breadcrumbs is correct?",
+        "choices": [
+          "Breadcrumbs should be accessible and semantic.",
+          "Breadcrumbs must always be an image without text.",
+          "Breadcrumbs can never be used with ARIA.",
+          "Breadcrumbs should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Breadcrumbs should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Breadcrumbs is correct?",
+        "choices": [
+          "Breadcrumbs should be accessible and semantic.",
+          "Breadcrumbs must always be an image without text.",
+          "Breadcrumbs can never be used with ARIA.",
+          "Breadcrumbs should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Breadcrumbs should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "sidebar": {
+    "title": "Knowledge Check: Sidebars",
+    "questions": [
+      {
+        "question": "What CSS property is typically used to animate a collapsible sidebar in and out of view?",
+        "answers": [
+          "display",
+          "width",
+          "transform",
+          "margin"
+        ],
+        "answer": "transform"
+      },
+      {
+        "question": "Which statement about Sidebar is correct?",
+        "choices": [
+          "Sidebar should be accessible and semantic.",
+          "Sidebar must always be an image without text.",
+          "Sidebar can never be used with ARIA.",
+          "Sidebar should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Sidebar should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Sidebar is correct?",
+        "choices": [
+          "Sidebar should be accessible and semantic.",
+          "Sidebar must always be an image without text.",
+          "Sidebar can never be used with ARIA.",
+          "Sidebar should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Sidebar should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "pagination": {
+    "title": "Knowledge Check: Pagination",
+    "questions": [
+      {
+        "question": "How should the currently active page be marked up for accessibility?",
+        "answers": [
+          "With a `<b>` tag",
+          "With `aria-current=\"page\"`",
+          "With a class of `active`",
+          "With an `id` of `current`"
+        ],
+        "answer": "With `aria-current=\"page\"`"
+      },
+      {
+        "question": "Which statement about Pagination is correct?",
+        "choices": [
+          "Pagination should be accessible and semantic.",
+          "Pagination must always be an image without text.",
+          "Pagination can never be used with ARIA.",
+          "Pagination should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Pagination should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Pagination is correct?",
+        "choices": [
+          "Pagination should be accessible and semantic.",
+          "Pagination must always be an image without text.",
+          "Pagination can never be used with ARIA.",
+          "Pagination should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Pagination should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  },
+  "stepper": {
+    "title": "Knowledge Check: Steppers",
+    "questions": [
+      {
+        "question": "What is the primary purpose of a stepper component?",
+        "answers": [
+          "To display a list of steps",
+          "To guide a user through a sequence of steps in a process",
+          "To allow users to select a number",
+          "To show progress of a download"
+        ],
+        "answer": "To guide a user through a sequence of steps in a process"
+      },
+      {
+        "question": "Which statement about Stepper is correct?",
+        "choices": [
+          "Stepper should be accessible and semantic.",
+          "Stepper must always be an image without text.",
+          "Stepper can never be used with ARIA.",
+          "Stepper should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Stepper should follow semantic HTML and accessibility best practices."
+      },
+      {
+        "question": "Which statement about Stepper is correct?",
+        "choices": [
+          "Stepper should be accessible and semantic.",
+          "Stepper must always be an image without text.",
+          "Stepper can never be used with ARIA.",
+          "Stepper should break keyboard navigation."
+        ],
+        "answer": 0,
+        "explanation": "Stepper should follow semantic HTML and accessibility best practices."
+      }
+    ]
+  }
+}

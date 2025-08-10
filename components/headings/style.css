@@ -1,0 +1,6 @@
+/* Using Tailwind's typography plugin handles most heading styles */
+/* Custom adjustments can be made here */
+h1 {
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
