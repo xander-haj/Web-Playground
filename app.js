@@ -1,3 +1,5 @@
+import { CSSEditor } from './css_editor/css_editor.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
     const app = new ComponentPlayground();
@@ -8,47 +10,32 @@ class ComponentPlayground {
     constructor() {
         this.gallery = document.getElementById('component-gallery');
         this.livePreviewArea = document.getElementById('live-preview-area');
+        this.sidePanel = document.getElementById('side-panel');
         this.sidePanelTabs = document.getElementById('side-panel-tabs');
         this.sidePanelContent = document.getElementById('side-panel-content');
         this.exportPanel = document.getElementById('export-panel');
+        
+        this.cssEditorContainer = null;
         this.componentStyleTag = null;
         this.activeComponent = null;
         this.activeTab = 'overview';
         this.componentCache = new Map();
         this.currentLesson = null;
         this.quizAnswerHandler = null;
-        this.dataCache = {
-            overview: null,
-            html: null,
-            css: null,
-            js: null,
-            props: null,
-            quiz: null
-        };
+        
+        this.cssEditMode = false;
+        this.cssEditor = null;
+        this.cssEditModeToggle = document.getElementById('css-edit-mode-toggle');
     }
 
     init() {
-        this.setupEventListeners();
-        this.loadAllData().then(() => {
-            this.loadComponent('button');
-        });
-    }
+        this.cssEditorContainer = document.createElement('div');
+        this.cssEditorContainer.id = 'css-editor-container';
+        this.sidePanel.insertBefore(this.cssEditorContainer, this.sidePanelContent);
 
-    async loadAllData() {
-        try {
-            const [overview, html, css, js, props, quiz] = await Promise.all([
-                fetch('data/overview.json').then(res => res.json()),
-                fetch('data/html.json').then(res => res.json()),
-                fetch('data/css.json').then(res => res.json()),
-                fetch('data/js.json').then(res => res.json()),
-                fetch('data/props.json').then(res => res.json()),
-                fetch('data/quiz.json').then(res => res.json())
-            ]);
-            
-            this.dataCache = { overview, html, css, js, props, quiz };
-        } catch (error) {
-            console.error('Failed to load educational data:', error);
-        }
+        this.cssEditor = new CSSEditor(this.cssEditorContainer, this.livePreviewArea);
+        this.setupEventListeners();
+        this.loadComponent('button');
     }
 
     setupEventListeners() {
@@ -67,10 +54,53 @@ class ComponentPlayground {
             const tabButton = e.target.closest('.side-panel-tab');
             if (tabButton && tabButton.dataset.tab) {
                 this.activeTab = tabButton.dataset.tab;
-                this.updateActiveTab();
-                this.renderLessonContent();
+                this.renderSidePanel();
             }
         });
+        
+        if (this.cssEditModeToggle) {
+            this.cssEditModeToggle.addEventListener('click', () => {
+                this.toggleCssEditMode();
+            });
+        }
+    }
+    
+    toggleCssEditMode() {
+        this.cssEditMode = !this.cssEditMode;
+        this.sidePanel.classList.toggle('css-editor-active', this.cssEditMode);
+        this.updateCssEditModeButton();
+        this.renderSidePanel();
+    }
+
+    updateCssEditModeButton() {
+        if (!this.cssEditModeToggle) {
+            return;
+        }
+
+        this.cssEditModeToggle.classList.toggle('bg-green-600', this.cssEditMode);
+        this.cssEditModeToggle.classList.toggle('hover:bg-green-700', this.cssEditMode);
+        this.cssEditModeToggle.classList.toggle('bg-indigo-600', !this.cssEditMode);
+        this.cssEditModeToggle.classList.toggle('hover:bg-indigo-700', !this.cssEditMode);
+
+        const icon = this.cssEditModeToggle.querySelector('[data-lucide]');
+        const text = this.cssEditModeToggle.querySelector('span');
+        
+        if (icon) {
+            if (this.cssEditMode) {
+                icon.setAttribute('data-lucide', 'x-circle');
+            } else {
+                icon.setAttribute('data-lucide', 'paintbrush-2');
+            }
+        }
+        
+        if (text) {
+            if (this.cssEditMode) {
+                text.textContent = 'Exit Edit Mode';
+            } else {
+                text.textContent = 'CSS Edit Mode';
+            }
+        }
+        lucide.createIcons();
     }
 
     async fetchComponentAssets(name) {
@@ -90,12 +120,16 @@ class ComponentPlayground {
             const css = cssRes.status === 'fulfilled' && cssRes.value.ok ? await cssRes.value.text() : '';
             const js = jsRes.status === 'fulfilled' && jsRes.value.ok ? await jsRes.value.text() : '';
             
-            let lesson;
+            let lesson = {};
             if (lessonRes.status === 'fulfilled' && lessonRes.value.ok) {
-                lesson = await lessonRes.value.json();
+                try {
+                    lesson = await lessonRes.value.json();
+                } catch (e) {
+                    console.error(`Failed to parse lesson.json for ${name}:`, e);
+                    lesson = { overview: { title: "Lesson Error", description: `Could not parse lesson.json for ${name}.` } };
+                }
             } else {
-                console.warn(`Could not load components/${name}/lesson.json. Falling back to data/*.json files.`);
-                lesson = this.buildLessonFromData(name);
+                console.warn(`Could not load components/${name}/lesson.json.`);
             }
 
             const assets = { html, css, lesson, js };
@@ -108,36 +142,6 @@ class ComponentPlayground {
         }
     }
 
-    buildLessonFromData(componentName) {
-        const lesson = {};
-        
-        if (this.dataCache.overview) {
-            lesson.overview = this.dataCache.overview[componentName] || {};
-        }
-        
-        if (this.dataCache.html) {
-            lesson.html = this.dataCache.html[componentName] || {};
-        }
-        
-        if (this.dataCache.css) {
-            lesson.css = this.dataCache.css[componentName] || {};
-        }
-        
-        if (this.dataCache.js) {
-            lesson.js = this.dataCache.js[componentName] || {};
-        }
-        
-        if (this.dataCache.props) {
-            lesson.props = this.dataCache.props[componentName] || [];
-        }
-        
-        if (this.dataCache.quiz) {
-            lesson.quiz = this.dataCache.quiz[componentName] || {};
-        }
-
-        return lesson;
-    }
-
     async loadComponent(name) {
         this.activeComponent = name;
         this.updateActiveComponentLink();
@@ -148,10 +152,11 @@ class ComponentPlayground {
         this.currentLesson = assets.lesson;
         this.injectHTML(assets.html);
         this.injectCSS(assets.css);
+        
+
+        this.cssEditor.render(this.activeComponent, assets.css, this.componentStyleTag);
+
         this.handleTabsVisibility();
-        this.handleProps();
-        this.renderLessonContent();
-        this.updateActiveTab();
         this.setupExportPanel();
         
         try {
@@ -173,16 +178,18 @@ class ComponentPlayground {
                 console.error(`Error loading script for component ${name}:`, error);
             }
         }
+        
+        this.renderSidePanel();
     }
     
     handleTabsVisibility() {
-        const jsTab = this.sidePanelTabs.querySelector('[data-tab="js"]');
-        const quizTab = this.sidePanelTabs.querySelector('[data-tab="quiz"]');
+        const jsTab = this.sidePanelTabs.querySelector('[data-tab=\"js\"]');
+        const quizTab = this.sidePanelTabs.querySelector('[data-tab=\"quiz\"]');
 
-        const hasJs = this.currentLesson.js && (this.currentLesson.js.code || this.currentLesson.js.content || this.currentLesson.js.description);
+        const hasJs = this.currentLesson && this.currentLesson.js && (this.currentLesson.js.code || this.currentLesson.js.content || this.currentLesson.js.description);
         jsTab.style.display = hasJs ? 'flex' : 'none';
         
-        const hasQuiz = this.currentLesson.quiz && (this.currentLesson.quiz.questions && this.currentLesson.quiz.questions.length > 0);
+        const hasQuiz = this.currentLesson && this.currentLesson.quiz && (this.currentLesson.quiz.questions && this.currentLesson.quiz.questions.length > 0);
         quizTab.style.display = hasQuiz ? 'flex' : 'none';
 
         if ((!hasJs && this.activeTab === 'js') || (!hasQuiz && this.activeTab === 'quiz')) {
@@ -203,6 +210,15 @@ class ComponentPlayground {
         this.componentStyleTag.textContent = css;
     }
 
+    renderSidePanel() {
+        if (this.cssEditMode) {
+             this.cssEditor.render(this.activeComponent, this.componentCache.get(this.activeComponent)?.css || '', this.componentStyleTag);
+        } else {
+            this.updateActiveTab();
+            this.renderLessonContent();
+        }
+    }
+
     renderLessonContent() {
         if (this.quizAnswerHandler) {
             this.sidePanelContent.removeEventListener('click', this.quizAnswerHandler);
@@ -211,11 +227,6 @@ class ComponentPlayground {
 
         if (!this.currentLesson) {
             this.sidePanelContent.innerHTML = '<p>Content not available.</p>';
-            return;
-        }
-
-        if (this.activeTab === 'props') {
-            this.renderPropsPanel();
             return;
         }
 
@@ -315,123 +326,12 @@ class ComponentPlayground {
         }
     }
 
-    handleProps() {
-        const propsTab = this.sidePanelTabs.querySelector('[data-tab="props"]');
-        const hasProps = this.currentLesson.props && this.currentLesson.props.length > 0;
-
-        if (hasProps) {
-            propsTab.style.display = 'flex';
-            this.applyDefaultProps();
-        } else {
-            propsTab.style.display = 'none';
-            if (this.activeTab === 'props') {
-                this.activeTab = 'overview';
-            }
-        }
-    }
-
-    applyDefaultProps() {
-        const props = this.currentLesson.props || [];
-        props.forEach(prop => {
-            this.updateProp(prop, prop.defaultValue);
-        });
-    }
-
-    renderPropsPanel() {
-        const props = this.currentLesson.props;
-        if (!props || props.length === 0) {
-            this.sidePanelContent.innerHTML = '<p class="p-4 text-gray-500">No adjustable properties for this component.</p>';
-            return;
-        }
-
-        let controlsHtml = props.map(prop => {
-            let inputHtml = '';
-            const currentValue = this.getCurrentPropValue(prop) || prop.defaultValue;
-            switch (prop.type) {
-                case 'color':
-                    inputHtml = `<input type="color" id="prop-${prop.name}" value="${currentValue}" class="w-full h-10 p-1 border border-gray-300 rounded-md cursor-pointer">`;
-                    break;
-                case 'text':
-                default:
-                    inputHtml = `<input type="text" id="prop-${prop.name}" value="${this.escapeHtml(currentValue)}" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm">`;
-                    break;
-            }
-            return `
-                <div class="mb-4">
-                    <label for="prop-${prop.name}" class="block text-sm font-medium text-gray-700 mb-1">${this.escapeHtml(prop.label)}</label>
-                    ${inputHtml}
-                </div>
-            `;
-        }).join('');
-
-        this.sidePanelContent.innerHTML = `
-            <div class="not-prose">
-                <h3>Adjust Properties</h3>
-                <p>Change the values below to see the component update in real-time.</p>
-                <div class="mt-4">${controlsHtml}</div>
-                <button id="reset-props-btn" class="w-full mt-4 px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md text-sm font-medium">Reset to Default</button>
-            </div>
-        `;
-
-        props.forEach(prop => {
-            document.getElementById(`prop-${prop.name}`).addEventListener('input', (e) => {
-                this.updateProp(prop, e.target.value);
-            });
-        });
-
-        document.getElementById('reset-props-btn').addEventListener('click', () => {
-            this.resetProps();
-        });
-    }
-    
-    getCurrentPropValue(prop) {
-        const previewRoot = this.livePreviewArea.firstElementChild;
-        if (!previewRoot) return null;
-
-        if (prop.cssProperty) {
-            return getComputedStyle(previewRoot).getPropertyValue(prop.cssProperty).trim();
-        } else if (prop.attribute) {
-            const target = prop.selector ? (previewRoot.matches(prop.selector) ? previewRoot : previewRoot.querySelector(prop.selector)) : previewRoot;
-            return target ? target.getAttribute(prop.attribute) : null;
-        } else if (prop.selector) {
-            const targetElement = previewRoot.matches(prop.selector) ? previewRoot : previewRoot.querySelector(prop.selector);
-            return targetElement ? targetElement.textContent : null;
-        }
-        return null;
-    }
-
-    updateProp(prop, value) {
-        const previewRoot = this.livePreviewArea.firstElementChild;
-        if (!previewRoot) return;
-
-        if (prop.cssProperty) {
-            previewRoot.style.setProperty(prop.cssProperty, value);
-        } else if (prop.attribute) {
-            const target = prop.selector ? (previewRoot.matches(prop.selector) ? previewRoot : previewRoot.querySelector(prop.selector)) : previewRoot;
-            if(target) target.setAttribute(prop.attribute, value);
-        } else if (prop.selector) {
-            const targetElement = previewRoot.matches(prop.selector) ? previewRoot : previewRoot.querySelector(prop.selector);
-            if (targetElement) {
-                targetElement.textContent = value;
-            }
-        }
-    }
-
-    resetProps() {
-        const props = this.currentLesson.props || [];
-        props.forEach(prop => {
-            this.updateProp(prop, prop.defaultValue);
-            const inputEl = document.getElementById(`prop-${prop.name}`);
-            if (inputEl) inputEl.value = prop.defaultValue;
-        });
-    }
-
     setupExportPanel() {
         const assets = this.componentCache.get(this.activeComponent);
         if (!assets) return;
 
         document.getElementById('copy-html-btn').onclick = () => this.copyCodeToClipboard('html', assets.html);
-        document.getElementById('copy-css-btn').onclick = () => this.copyCodeToClipboard('css', assets.css);
+        document.getElementById('copy-css-btn').onclick = () => this.copyCodeToClipboard('css', this.cssEditor.componentCss || assets.css);
 
         const copyJsBtn = document.getElementById('copy-js-btn');
         if (assets.js && assets.js.trim() !== '') {
@@ -442,8 +342,9 @@ class ComponentPlayground {
         }
         
         document.getElementById('copy-all-btn').onclick = () => {
+            const finalCss = this.cssEditor.componentCss || assets.css;
             let allCode = `<!-- HTML -->\n${assets.html}\n\n`;
-            allCode += `<style>\n/* CSS */\n${assets.css}\n</style>\n\n`;
+            allCode += `<style>\n/* CSS */\n${finalCss}\n</style>\n\n`;
             if (assets.js && assets.js.trim() !== '') {
                 allCode += `<script type="module">\n/* JS */\n${assets.js}\n</script>`;
             }

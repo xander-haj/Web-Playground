@@ -65,3 +65,20 @@ body {
     font-size: 1.1em;
     font-weight: 700;
 }
+
+/* CSS Editor Mode styles */
+#side-panel.css-editor-active #side-panel-tabs,
+#side-panel.css-editor-active #side-panel-content,
+#side-panel.css-editor-active #export-panel {
+    display: none;
+}
+
+#side-panel:not(.css-editor-active) #css-editor-container {
+    display: none;
+}
+
+#css-editor-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
